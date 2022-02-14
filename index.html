@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tufaayo | foundation</title>
+    <link rel="stylesheet" href="w3css.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="assignment.css">
+    <script src="jquery.min.js"></script>
+</head>
+<style>
+    .search input[type=text]{
+        padding-left: 30px;
+    }
+    .back_img{
+        background-image: url("images/teenage\ mothers.jfif");
+        background-size: 100% 100%;
+        height:200px;
+        cursor: pointer;
+    }
+    .img-card:hover{
+        transform: translate(1px,1px);
+        box-shadow: 1px 1px 16px 1px;
+    }
+    .food_img{
+        background-image: url("images/counselling.jfif");
+        background-size: 100% 100%;
+        height:200px;
+        cursor: pointer;
+    }
+    .cloth_img{
+        background-image: url("images/poor\ girls.jfif");
+        background-size: 100% 100%;
+        height:200px;
+        cursor: pointer;
+    }
+    .topnav{
+        z-index: 10;
+        top: 0;
+    }
+   @media screen and (max-width:768px) {
+       .nav-img img{
+           display: none;
+       }
+       .col-sm-4 img{
+           width:18%;
+           margin-bottom: 5px;
+       }
+       .col-sm-4 h1{
+           font-size:20px;
+       }
+       .col-sm-4 .slogan{
+           font-size:12px;
+       }
+       .btn-icon button , .btn-icon .fa{
+           display:none;
+           padding-top:5px;
+       }
+       .links{
+           display: none
+       }
+       .search input{
+           margin-bottom:10px;
+           width:100%;
+       }
+    
+    }
+    @media screen and (min-width:768px){
+      .img-top{
+          display: none;
+      }
+      .fa-bars{
+          display: none;
+      }
+    }
+    .w3-sidenav{
+        display: none;
+    }
+  
+</style>
+
+<body>
+        <div class="w3-card-4 position-fixed container-fluid topnav">
+            <div class="row w3-white ">
+                <div class="col-sm-4 mt-3 w3-center">
+                    <div class="w3-left">
+                        <i class="fa fa-bars" style="font-size:25px;"></i>
+                    </div>
+                    <img src="images/log.PNG" class="img-fluid img-top">                   
+                    <h1 style="font-family:algerian;">
+                        Tufaayo foundation
+                    </h1>
+                    <i class="slogan">"We care"</i>
+                </div>
+                <div class="col-sm-4 nav-img">
+                    <img src="images/log.PNG" class="img-fluid w-25">
+                </div>
+                <div class="col-sm-4">
+                    <div class="d-block mt-2">
+                        <div class="d-flex btn-icon">
+                            <div class="">
+                                <button class="w3-btn btn-primary"> <i class="fa fa-user"></i> Login </button>
+                            </div>
+                            <div class=" mt-1 ml-2">
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-instagram"></i>                        
+                            </div>
+                        </div>
+                        <div class="search mt-3">
+                            <i class="fa fa-search position-absolute ml-2 mt-1" style="font-size:20px"></i>
+                            <input type="text" name="search" placeholder="search ....." class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar container-fluid w3-yellow links">
+                <a href="" class="btn">Home </a>
+                <a href="" class="btn">Contact us</a>
+                <a href="" class="btn">About us</a>
+                <a href="" class="btn">FAQZ</a>
+                <a href="#" class="btn" onclick="donate()">Donate</a>
+            </div>
+        </div>
+        
+        <!-- on bars click -->
+        <div class="w3-sidenav w3-animate-top w3-yellow" style="z-index:100;">
+            <ul>
+                <a href="" class="navabar">
+                    <i class="fa fa-home"></i>
+                    <i class="btn"> Home </i>
+                </a>
+                <a href="" class="navbar">
+                    <i class="fa fa-phone"></i> 
+                    <i  class="btn"> Contact us</i>
+                </a>
+                <a href="" class="navbar">
+                    <i class="fa fa-user"></i>
+                    <i class="btn">  About us</i>
+                </a>
+                <a href="" class="navbar">
+                    <i class="fa fa-question"></i>
+                    <i  class="btn"> FAQZ</i>
+                </a>
+                <a href="" class="navbar">
+                    <i class="fa fa-money"></i> 
+                    <i  class="btn" onclick="donate()"> Donate</i>
+                </a>
+
+            </ul>
+        </div>
+    </div><br><br><br><br><br><br><br>
+
+
+    <div class="w3-content w3-section container">
+        <div class="w3-card-4 w3-round mySlides mt-5">
+            <div class="row p-3">
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <img class="img-thumbnail w3-animate-zoom" src="images/poor girls.jfif" style="width:100%;height:100%;border-radius:100%;">
+                </div>
+                <div class="col-sm-6 col-md-8 col-lg-8">
+                    <div class="desc w3-center">
+                        <h4 class="w3-animate-left">Objective one</h4>
+                        <p class="w3-animate-top">Keeping the girl child in school</p>
+                        <button class="w3-round w3-btn w3-yellow" style="width:400px;">see more </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w3-card-4 w3-round mySlides">
+            <div class="row p-3">
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <img class="img-thumbnail w3-animate-zoom" src="images/counselling.jfif" style="width:100%;height:100%;border-radius:100%;">
+                </div>
+                <div class="col-sm-6 col-md-8 col-lg-8">
+                    <div class="desc w3-center">
+                        <h4 class="w3-animate-left">Objective two</h4>
+                        <p class="w3-animate-top">Guidance and counselling at school level </p>
+                        <button class="w3-round w3-btn w3-yellow" style="width:400px;">see more </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w3-card-4 mySlides w3-round">
+            <div class="row p-3">
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <img class="img-thumbnail w3-animate-zoom" src="images/skilling.jfif" style="width:100%;height:100%;border-radius:100%;">
+                </div>
+                <div class="col-sm-6 col-md-8 col-lg-8">
+                    <div class="desc w3-center">
+                        <h4 class="w3-animate-left">Objective three</h4>
+                        <p class="w3-animate-top">Equiping teenage mothers with skills to survive in life</p>
+                        <button class="w3-round w3-btn w3-yellow" style="width:400px;">see more </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w3-card-4 mySlides w3-round">
+            <div class="row p-3">
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <img class="img-thumbnail w3-animate-zoom" src="images/soles_4-souls.jpeg" style="width:100%;height:100%;border-radius:100%;">
+                </div>
+                <div class="col-sm-6 col-md-8 col-lg-8">
+                    <div class="desc w3-center">
+                        <h4 class="w3-animate-left">Objective four</h4>
+                        <p class="w3-animate-top">Empowering young girls to become successful women </p>
+                        <button class="w3-round w3-btn w3-yellow" style="width:400px;">see more </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+     
+      </div>
+
+    <div class="container ">
+        <div class="row mt-4 single">
+            <div class="col-sm-122">
+                <div class="w3-card-4 w3-round img-card w3-yellow">
+                    <div class="back_img">
+                    </div>
+                    <div class="w3-center p-2">
+                        <p><b>Helping Teenager mothers </b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="w3-card-4 w3-round img-card w3-yellow">
+                    <div class="food_img">
+                        
+                    </div>
+                    <div class="w3-center p-2">
+                        <p><b> Straight talk to students</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="w3-card-4 w3-round img-card w3-yellow">
+                    <div class="cloth_img">
+                        
+                    </div>
+                    <div class="w3-center p-2">
+                        <p><b>Charity work</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron mt-5">
+        <div class="w3-center">
+            <h3>Histroy</h3>
+        </div>
+        <div class="w3-container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellat, rerum iusto maxime corporis impedit atque est quas commodi beatae. Saepe velit maxime a quo perferendis dolor totam quisquam aliquam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellat, rerum iusto maxime corporis impedit atque est quas commodi beatae. Saepe velit maxime a quo perferendis dolor totam quisquam aliquam.</p>
+        </div>
+    </div>
+
+    <!-- about us -->
+    <div class="about-us">
+        <div class="w3-center p-5">
+            <h2>About us </h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="w3-card-2 w3-card-4 w3-white p-2 w3-round-large">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="images/soles_4-souls.jpeg"  style="width:85%;border-radius: 100%;" alt="">
+                        </div>
+                        <div class="col-sm-6 mt-2">
+                            <p style="font-size:20px;"><b>Nyanzi Matia</b></p>
+                            <i>Co founder</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="w3-card-2 w3-card-4 w3-white p-2 w3-round-large">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="images/soles_4-souls.jpeg"  style="width:85%;border-radius: 100%;" alt="">
+                        </div>
+                        <div class="col-sm-6 mt-2">
+                            <p style="font-size:20px;"><b>Nabazziwa Janat</b></p>
+                            <i>CEO </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="w3-card-2 w3-card-4 w3-white p-2 w3-round-large">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="images/soles_4-souls.jpeg"  style="width:85%;border-radius: 100%;" alt="">
+                        </div>
+                        <div class="col-sm-6 mt-2">
+                            <p style="font-size:20px;"><b>Lukenge Benard</b></p>
+                            <i>Secretary</i>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="modal w3-animate-zoom" style="margin:auto;width:450px;">
+        <div class="modal-content">
+            <div class="modal-header w3-light-grey">
+                <h3>Donate to us</h3>
+                <span class="w3-closebtn" onclick="close()">X</span>
+            </div>
+            <div class="container mt-2">
+                <form action="">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder="Enter phone number">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary">
+                    </div>           
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="mt-4">
+        <div class="div">
+            <ul>
+                <p>Contact Us</p>
+                <li><i class="fa fa-envelope"></i><a href="www.gmail.com">tufaayo@gmail.com</a></li>
+                <li><i class="fa fa-phone"></i>+256 785- 672-572</li>
+                <li><i class="fa fa-whatsapp"></i> 0785623561</li>
+                <li><i class="fa fa-globe"></i> <a href="">tufaayo@ac.ug</a></li>
+            </ul>
+        </div>
+        <div class="div">
+            <ul>
+                <p>Medical Services offered</p>
+                <li> Helping hte needy</li>
+                <li> Helping hte needy</li>
+                <li> Helping hte needy</li>
+                <li> Helping hte needy</li>
+            </ul>
+        </div>
+        <div class="div">
+            <ul>
+                <p>Location</p>
+                <li><i class="fa fa-map-marker"></i> Lira - Uganda </li>
+                <li>P .O Box 232 , Ayere village</li>
+                <li>Our offices are in
+                    <ul>
+                        <li>Mukono Opposite St .Paul Church</li>
+                        <li>Soroti Opposite Stanbic Bank</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="div">
+            <ul id="icons">
+                <p>Our Social media Handles</p>
+                <li><i class="fa fa-twitter"></i></li>
+                <li><i class="fa fa-linkedin"></i></li>
+                <li><i class="fa fa-instagram"></i></li>
+                <li><i class="fa fa-youtube"></i></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+            });
+        })
+        $(document).ready(function(){
+            $('.single').slick({
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            speed: 300,
+            });
+        })
+
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 5000); // Change image every 2 seconds
+        }
+        </script>
+    <script>
+        function donate(){
+            document.getElementsByClassName("modal")[0].style.display="block";
+        }
+        $(document).ready(function(){
+            $(".w3-closebtn").click(function(){
+                $(".modal").hide()
+            })
+            $(".fa-bars").click(function(){
+                $(".w3-sidenav").toggleClass("w3-show")
+            })
+            $(".cancel").click(function(){
+                $(".w3-sidenav").hide()
+            })
+        })
+    </script>
+</body>
+</html>
