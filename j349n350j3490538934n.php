@@ -49,7 +49,11 @@
         <h2>Top section</h2>
 
         <form action="">
+            <label for="">Adjust the name</label>
+            <input type="text" name="title" class="form-control">
 
+            <label>Image </label>
+            <input type="file" name="for">
         </form>
     </div>
 </div>
