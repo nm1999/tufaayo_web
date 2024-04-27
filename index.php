@@ -90,9 +90,9 @@ https://templatemo.com/tm-562-space-dynamic
                 <h6>Welcome !!!!!</h6>
                 <h2>We Improve <em>Lifes in the </em> <span>Rural</span> Communities</h2>
                 <p>We are a professional youth led organisation operating in Lira , aiming at improving livelyhood of every community member.</p>
-                <form id="search" action="#" method="GET">
+                <form id="search" action="./api/subscribe.php" method="POST">
                   <fieldset>
-                    <input type="address" name="address" class="email" placeholder="Enter your email address" autocomplete="on" required>
+                    <input type="address" name="email" class="email" placeholder="Enter your email address" autocomplete="on" required>
                   </fieldset>
                   <fieldset>
                     <button type="submit" class="main-button">Subscribe </button>
@@ -411,7 +411,7 @@ https://templatemo.com/tm-562-space-dynamic
     <div class="container">
       <div class="row">
         <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
-          <p>© Copyright 2023 Tufaayo foundation. All Rights Reserved. 
+          <p>© Copyright 2024 Tufaayo foundation. All Rights Reserved. 
           
           <br>Design: <a rel="nofollow" href="https://www.jcmtechug.com/">jcmtechug.com</a></p>
         </div>

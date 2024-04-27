@@ -27,8 +27,32 @@
     <link rel="stylesheet" href="assets/css/owl.css">
 </head>
 <body>
-    <form action="">
-        
-    </form>
+
+<div class="row">
+    <div class="col-md-6 col-lg-6 col-sm-6">
+        <form action="./api/" method="post">
+            <h2>Add a blog</h2>
+            <label for="">Title</label>
+            <input type="text" name="title" placeholder="Enter the blog title" class="form-control">
+            
+            <label for="">Description</label>
+            <input type="text" name="description" placeholder="Enter the blog title" class="form-control">
+            
+            <label for="">Image</label>
+            <input type="file" name="description" placeholder="Enter the blog title" class="form-control">
+
+            <br>
+            <input type="submit" class="btn btn-danger">
+        </form>
+    </div>
+    <div class="col-md-6 col-lg-6 col-sm-6">
+        <h2>Top section</h2>
+
+        <form action="">
+
+        </form>
+    </div>
+</div>
+    
 </body>
 </html>
