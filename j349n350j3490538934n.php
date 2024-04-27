@@ -30,7 +30,7 @@
 
 <div class="row">
     <div class="col-md-6 col-lg-6 col-sm-6">
-        <form action="./api/" method="post">
+        <form action="./api/blog.php" method="post" enctype="multipart/form-data">
             <h2>Add a blog</h2>
             <label for="">Title</label>
             <input type="text" name="title" placeholder="Enter the blog title" class="form-control">
@@ -39,7 +39,7 @@
             <input type="text" name="description" placeholder="Enter the blog title" class="form-control">
             
             <label for="">Image</label>
-            <input type="file" name="description" placeholder="Enter the blog title" class="form-control">
+            <input type="file" name="fileUpload" placeholder="Enter the blog title" class="form-control">
 
             <br>
             <input type="submit" class="btn btn-danger">
