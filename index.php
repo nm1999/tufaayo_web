@@ -370,11 +370,11 @@ https://templatemo.com/tm-562-space-dynamic
           </div>
         </div>
         <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="" method="post">
+          <form id="contact" action="./api/inquiry.php" method="post">
             <div class="row">
               <div class="col-lg-6">
                 <fieldset>
-                  <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                  <input type="name" name="firstname" id="name" placeholder="Firstname" autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-6">
