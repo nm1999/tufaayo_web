@@ -6,8 +6,6 @@ use App\Models\Setting;
 class Controller
 {
     public function index(){
-        // $setting = Setting::all();
-        // return response()->json(["res"=>$setting]);
         return view('pages.home');
     }
 
@@ -21,5 +19,14 @@ class Controller
     
     public function blog(){
         return view('pages.blog');
+    }
+
+    public function data(){
+        Setting::create([
+            "key" => "title",
+            "value" => "We improve Lifes in the Rural Communities"
+        ]);
+        $setting = Setting::all();
+        return response()->json(["res"=>$setting]);
     }
 }
