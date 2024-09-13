@@ -29,4 +29,13 @@ class Controller
         $setting = Setting::all();
         return response()->json(["res"=>$setting]);
     }
+
+    public function adminPanel(){
+        $setting = Setting::all();
+        return view('admin.home', compact('setting'));
+    }
+
+    public function saveSetting(Request $request){
+        
+    }
 }
