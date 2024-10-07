@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Http\Request;
 use App\Models\Setting;
 
 class Controller
@@ -36,6 +37,13 @@ class Controller
     }
 
     public function saveSetting(Request $request){
-        
+        $setting = Setting::all();
+        foreach ($request->all() as $key => $value) {
+            Setting::where('key',$key)->update([
+                "value"=> $value
+            ]);
+        }
+
+        return redirect()->route('adminPanel');
     }
 }
