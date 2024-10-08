@@ -158,8 +158,7 @@
               </div>
               <h4 class="mb-3">{{ getValue('service4') }} </h4>
               <p class="mb-4">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam
-                sed stet.
+                {{ getValue('service4_description') }}
               </p>
               <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
             </div>
@@ -172,10 +171,9 @@
               >
                 <i class="fa fa-tooth text-primary fs-4"></i>
               </div>
-              <h4 class="mb-3">Providing clean water</h4>
+              <h4 class="mb-3">{{ getValue('service5') }}</h4>
               <p class="mb-4">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam
-                sed stet.
+                {{ getValue('service5_description') }}
               </p>
               <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
             </div>
@@ -188,10 +186,9 @@
               >
                 <i class="fa fa-vials text-primary fs-4"></i>
               </div>
-              <h4 class="mb-3">Team building</h4>
+              <h4 class="mb-3">{{ getValue('service6') }}</h4>
               <p class="mb-4">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam
-                sed stet.
+                {{ getValue('service6_description') }}
               </p>
               <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
             </div>
@@ -210,8 +207,7 @@
               <p class="d-inline-block border rounded-pill text-light py-1 px-4">Features</p>
               <h1 class="text-white mb-4">Why Choose Us</h1>
               <p class="text-white mb-4 pb-2">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
-                eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet
+                {{ getValue('why_choose_us_description') }}
               </p>
               <div class="row g-4">
                 <div class="col-6">
