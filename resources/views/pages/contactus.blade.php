@@ -11,7 +11,7 @@
                         </div>
                         <div class="ms-4">
                             <p class="mb-2">Address</p>
-                            <h5 class="mb-0">Lira, Uganda</h5>
+                            <h5 class="mb-0">{{ getValue("our_location") }}</h5>
                         </div>
                     </div>
                 </div>
