@@ -72,14 +72,10 @@
             <p class="d-inline-block border rounded-pill py-1 px-4">About Us</p>
             <h1 class="mb-4">Why You Should Trust Us? Get Know About Us!</h1>
             <p>
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
-              eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore
-              erat amet
+              {{ getValue("why_you_should_trust_us") }}
             </p>
             <p class="mb-4">
-              Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum
-              amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus
-              dolor eos.
+              {{ getValue("why_you_should_trust_us_description") }}
             </p>
             <p><i class="far fa-check-circle text-primary me-3"></i>Quality health care</p>
             <p><i class="far fa-check-circle text-primary me-3"></i>Only Qualified Doctors</p>
@@ -113,10 +109,11 @@
               >
                 <i class="fa fa-heartbeat text-primary fs-4"></i>
               </div>
-              <h4 class="mb-3">We care for young pregnant mothers</h4>
+              <h4 class="mb-3">
+                {{ getValue('service1') }}                 
+              </h4>
               <p class="mb-4">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam
-                sed stet.
+                {{ getValue('service1_description') }}
               </p>
               <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
             </div>
@@ -129,10 +126,9 @@
               >
                 <i class="fa fa-x-ray text-primary fs-4"></i>
               </div>
-              <h4 class="mb-3">Impart life saving skills</h4>
+              <h4 class="mb-3">{{ getValue('service2') }}  </h4>
               <p class="mb-4">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam
-                sed stet.
+                {{ getValue('service2_description') }}
               </p>
               <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
             </div>
@@ -145,10 +141,9 @@
               >
                 <i class="fa fa-brain text-primary fs-4"></i>
               </div>
-              <h4 class="mb-3">Sensitize about sanitation</h4>
+              <h4 class="mb-3">{{ getValue('service3') }}</h4>
               <p class="mb-4">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam
-                sed stet.
+                {{ getValue('service3_description') }}
               </p>
               <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
             </div>
@@ -161,7 +156,7 @@
               >
                 <i class="fa fa-wheelchair text-primary fs-4"></i>
               </div>
-              <h4 class="mb-3">Provide scholaristic materials.</h4>
+              <h4 class="mb-3">{{ getValue('service4') }} </h4>
               <p class="mb-4">
                 Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam
                 sed stet.
