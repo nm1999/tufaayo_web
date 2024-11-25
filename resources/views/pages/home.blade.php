@@ -9,19 +9,19 @@
           <div class="row g-4">
             <div class="col-sm-4">
               <div class="border-start border-light ps-4">
-                <h2 class="text-white mb-1" data-toggle="counter-up">6</h2>
+                <h2 class="text-white mb-1" data-toggle="counter-up">{{ setValue()->school_visited }}</h2>
                 <p class="text-light mb-0">Visited Schools</p>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="border-start border-light ps-4">
-                <h2 class="text-white mb-1" data-toggle="counter-up">124</h2>
+                <h2 class="text-white mb-1" data-toggle="counter-up">{{ setValue()->number_of_members }}</h2>
                 <p class="text-light mb-0">Members</p>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="border-start border-light ps-4">
-                <h2 class="text-white mb-1" data-toggle="counter-up">4</h2>
+                <h2 class="text-white mb-1" data-toggle="counter-up">{{ setValue()->communities_visited }}</h2>
                 <p class="text-light mb-0">Communities</p>
               </div>
             </div>
