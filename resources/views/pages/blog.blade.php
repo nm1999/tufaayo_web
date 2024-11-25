@@ -1,76 +1,95 @@
 @extends('app')
 @section('content')
 <div id="blog" class="our-blog section">
+  <br>
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
-          <div class="section-heading">
-            <h2>Check Out  <em>Our</em> Latest <span>Visits</span></h2>
-          </div>
-        </div>
-        <div class="col-lg-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
-          <div class="top-dec">
-            <img src="{{ asset('img/aboutus.jpeg') }}" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
-          <div class="left-image">
-            <a href="#"><img src="{{ asset('images/tufaayologo.png') }}" alt="Workspace Desktop"></a>
-            <div class="info">
-              <div class="inner-content">
-                <ul>
-                  <li><i class="fa fa-calendar"></i> 24 Mar 2021</li>
-                  <li><i class="fa fa-users"></i> TemplateMo</li>
-                  <li><i class="fa fa-folder"></i> Branding</li>
-                </ul>
-                <a href="#"><h4>Manufacturing reusable sanitary towels </h4></a>
-                <p>Lorem ipsum dolor sit amet, consectetur and sed doer ket eismod tempor incididunt ut labore et dolore magna...</p>
-                <div class="main-blue-button">
-                  <a href="#">Join our 10k challenge</a>
+        <div class="col-md-9 col-lg-9 col-sm-12">
+          <br>
+          <h4>Our Visits</h4>
+          <div class="row">
+              <div class="col-md-6 col-sm-6 col-lg-12">
+                <div class="row">
+                  <div class="col-md-6 col-sm-12 col-lg-6">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+                      <div class="left-image">
+                        <a href="#">
+                          <img src="{{ asset('img/2.jpeg') }}" style="width:450px;height:340px;border-radius:10px" alt="Workspace Desktop">
+                        </a>
+                        <div>
+                          <div class="">
+                            <ul class="d-flex">
+                              <li><i class="fa fa-calendar"></i> 24 Mar 2021</li>                            
+                            </ul>
+                            <a href="#"><h4>Manufacturing reusable sanitary towels </h4></a>
+                            <p>Lorem ipsum dolor sit amet, consectetur and sed doer ket eismod tempor incididunt ut labore et dolore magna...</p>
+                            <div class="main-blue-button">
+                              <a href="#">Join our 10k challenge</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6 col-sm-12 col-lg-6">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+                      <div class="left-image">
+                        <a href="#"><img src="{{ asset('img/1.jpeg') }}" style="width:450px;height:340px;border-radius:10px" alt="Workspace Desktop"></a>
+                        <div class="info">
+                          <div class="">
+                            <ul class="d-flex">
+                              <li><i class="fa fa-calendar"></i> 24 Mar 2021</li>
+                            </ul>
+                            <a href="#"><h4>Manufacturing reusable sanitary towels </h4></a>
+                            <p>Lorem ipsum dolor sit amet, consectetur and sed doer ket eismod tempor incididunt ut labore et dolore magna...</p>
+                            <div class="main-blue-button">
+                              <a href="#">Join our 10k challenge</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <div class="col-md-6 col-sm-6 col-lg-12"></div>
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-3 col-sm-12">
+          <br>
+          <h4>Latest visits</h4>
+
+          <div class="row">
+            <div class="col-md-3 col-sm-12 col-lg-3">
+                <img src="{{ asset('img/1.jpeg') }}" style="width:100px;height:100px;border-radius:10px" alt="">
+            </div>
+            <div class="col-md-9 col-sm-12 col-lg-9">
+               <p>Lorem ipsum dolor fugiat architecto, provident consequuntur odio repudiandae.</p>
             </div>
           </div>
-        </div>
-        <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
-          <div class="right-list">
-            <ul>
-              <li>
-                <div class="left-content align-self-center">
-                  <span><i class="fa fa-calendar"></i> 18 Mar 2021</span>
-                  <a href="#"><h4>Lira hospital &amp; Lira city</h4></a>
-                  <p>Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...</p>
-                </div>
-                <div class="right-image">
-                  <a href="#"><img src="{{ asset('images/tufaayologo.png') }}" alt=""></a>
-                </div>
-              </li>
-              <li>
-                <div class="left-content align-self-center">
-                  <span><i class="fa fa-calendar"></i> 14 Mar 2021</span>
-                  <a href="#"><h4>Amolatar district &amp; Content Ideas</h4></a>
-                  <p>Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...</p>
-                </div>
-                <div class="right-image">
-                  <a href="#"><img src="{{ asset('images/tufaayologo.png') }}" alt=""></a>
-                </div>
-              </li>
-              <li>
-                <div class="left-content align-self-center">
-                  <span><i class="fa fa-calendar"></i> 06 Mar 2021</span>
-                  <a href="#"><h4>Barapwo primary school &amp; Digital Marketing</h4></a>
-                  <p>Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...</p>
-                </div>
-                <div class="right-image">
-                  <a href="#"><img src="{{ asset('images/tufaayologo.png') }}" alt=""></a>
-                </div>
-              </li>
-            </ul>
+          
+          <div class="row">
+            <div class="col-md-3 col-sm-12 col-lg-3">
+                <img src="{{ asset('img/1.jpeg') }}" style="width:100px;height:100px;border-radius:10px" alt="">
+            </div>
+            <div class="col-md-9 col-sm-12 col-lg-9">
+               <p>Lorem ipsum dolor fugiat architecto, provident consequuntur odio repudiandae.</p>
+            </div>
           </div>
+          
+          <div class="row">
+            <div class="col-md-3 col-sm-12 col-lg-3">
+                <img src="{{ asset('img/1.jpeg') }}" style="width:100px;height:100px;border-radius:10px" alt="">
+            </div>
+            <div class="col-md-9 col-sm-12 col-lg-9">
+               <p>Lorem ipsum dolor fugiat architecto, provident consequuntur odio repudiandae.</p>
+            </div>
+          </div>
+
         </div>
       </div>
-    </div>
   </div>
-  @endsection('content')
+</div>
+
+@endsection('content')

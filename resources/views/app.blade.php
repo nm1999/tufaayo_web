@@ -71,7 +71,7 @@
                     <a href="{{ route('index') }}" class="nav-item nav-link active">Home</a>
                     <a href="{{ route('aboutus') }}" class="nav-item nav-link">About Us</a>
                     <a href="{{ route('contactus') }}" class="nav-item nav-link">Contact Us</a>               
-                    <!-- <a href="{{ route('blog') }}" class="nav-item nav-link">Blogs</a>                -->
+                    <a href="{{ route('blog') }}" class="nav-item nav-link">Blogs</a>               
                 </div>
             </div>
         </nav>
