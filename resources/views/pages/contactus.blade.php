@@ -11,7 +11,7 @@
                         </div>
                         <div class="ms-4">
                             <p class="mb-2">Address</p>
-                            <h5 class="mb-0">{{ getValue("our_location") }}</h5>
+                            <h5 class="mb-0">{{ setValue()->location }}</h5>
                         </div>
                     </div>
                 </div>
@@ -22,7 +22,7 @@
                         </div>
                         <div class="ms-4">
                             <p class="mb-2">Call Us Now</p>
-                            <h5 class="mb-0">{{ getValue("our_phone_contact") }}</h5>
+                            <h5 class="mb-0">{{ setValue()->phone_number }}</h5>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                         </div>
                         <div class="ms-4">
                             <p class="mb-2">Mail Us Now</p>
-                            <h5 class="mb-0" style="font-size:17px">{{ getValue("our_mail") }}</h5>
+                            <h5 class="mb-0" style="font-size:17px">{{ setValue()->email_address }}</h5>
                         </div>
                     </div>
                 </div>
