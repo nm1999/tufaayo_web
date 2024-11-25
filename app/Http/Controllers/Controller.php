@@ -39,25 +39,31 @@ class Controller
     }
 
     public function saveSetting(Request $request){
-        $home_bg = $request->input('home_background_image');
+        $home_bg = $request->file('home_background_image');
         $title = $request->input('title');
         $school_visited = $request->input('school_visited');
         $communities_visited = $request->input('communities_visited');
         $number_of_members = $request->input('number_of_members');
-        $aboutus_background_image = $request->input('aboutus_background_image');
+        $aboutus_background_image = $request->file('aboutus_background_image');
         $location = $request->input('location');
         $phone_number = $request->input('phone_number');
         $email_address = $request->input('email_address');
         $why_trust_us = $request->input('why_trust_us');
 
+        //saving our images
+        $home_bg_name = uniqid() . '.' .$home_bg->getClientOriginalExtension();
+        $aboutus_background_image_name = uniqid() . '.' .$aboutus_background_image->getClientOriginalExtension();
+        $home_bg->move(public_path('settings'), $home_bg_name);
+        $aboutus_background_image->move(public_path('settings'), $aboutus_background_image_name);
+
         $setting = Setting::orderBy('id','desc')->first();
 
-        $setting->home_background_image = $home_bg;
+        $setting->home_background_image = $home_bg_name;
         $setting->title = $title;
         $setting->school_visited = $school_visited;
         $setting->communities_visited = $communities_visited;
         $setting->number_of_members = $number_of_members;
-        $setting->aboutus_background_image = $aboutus_background_image;
+        $setting->aboutus_background_image = $aboutus_background_image_name;
         $setting->location =$location;
         $setting->phone_number = $phone_number;
         $setting->email_address = $email_address;

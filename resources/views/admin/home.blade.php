@@ -4,7 +4,7 @@
     <br>
     <hr>
     <h6 style="color:#fd27dd">{{ session('message') }}</h6>
-    <form action="{{ route('save.settings') }}" method="post">
+    <form action="{{ route('save.settings') }}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="row">
             <div class="col-md-6 col-sm-12 col-lg-6">
@@ -74,17 +74,17 @@
         <h4>Blog form</h4>
         <div class="formgroup">
             <label for="">title</label>
-            <input type="text" name="title" class="form-control">
+            <input type="text" name="title" class="form-control" required>
         </div>
        
         <div class="formgroup">
             <label for="">Description</label>
-            <input type="text" name="description" class="form-control">
+            <input type="text" name="description" class="form-control" required>
         </div>
 
         <div class="formgroup">
             <label for="">Blog photo</label>
-            <input type="file" name="blog_image" class="form-control">
+            <input type="file" name="blog_image" class="form-control" required>
         </div>
             <br>
         <input type="submit" class="btn btn-primary w-100 py-3">
