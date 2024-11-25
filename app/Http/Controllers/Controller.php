@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Setting;
+use App\Models\Blog;
 
 class Controller
 {
@@ -18,8 +19,9 @@ class Controller
         return view('pages.contactus');
     }
     
-    public function blog(){
-        return view('pages.blog');
+    public function blogPost(){
+        $blogs = Blog::orderBy('id','desc')->get();
+        return view('pages.blog',compact('blogs'));
     }
 
     public function data(){
@@ -62,6 +64,23 @@ class Controller
         $setting->why_trust_us = $why_trust_us;
 
         $setting->save();
-        return redirect()->route('adminPanel');
+        return redirect()->route('adminPanel')->with('message','Settings Updated successfully');
+    }
+
+    public function saveBlog(Request $req){
+        $title = $req->input('title');
+        $desc = $req->input('description');
+        $file = $req->file('blog_image');
+
+        $filename = uniqid() . '.' .$file->getClientOriginalExtension();
+        $file->move(public_path('blogs'), $filename);
+
+        $blog = Blog::create([
+            "title"=>$title,
+            "description"=>$desc,
+            "blog_image"=>$filename
+        ]);
+
+        return redirect()->route('adminPanel')->with('message','Blog added successfully');
     }
 }

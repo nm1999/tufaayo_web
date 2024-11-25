@@ -3,6 +3,7 @@
 <div class="container">
     <br>
     <hr>
+    <h6 style="color:#fd27dd">{{ session('message') }}</h6>
     <form action="{{ route('save.settings') }}" method="post">
         @csrf
         <div class="row">
@@ -66,6 +67,27 @@
                 <button class="btn btn-primary w-100 py-3" type="submit">Save Changes</button>
             </div>
         </div>
+    </form>
+<br>
+    <form action="{{ route('save.blog') }}" method="post" enctype="multipart/form-data">
+        @csrf
+        <h4>Blog form</h4>
+        <div class="formgroup">
+            <label for="">title</label>
+            <input type="text" name="title" class="form-control">
+        </div>
+       
+        <div class="formgroup">
+            <label for="">Description</label>
+            <input type="text" name="description" class="form-control">
+        </div>
+
+        <div class="formgroup">
+            <label for="">Blog photo</label>
+            <input type="file" name="blog_image" class="form-control">
+        </div>
+            <br>
+        <input type="submit" class="btn btn-primary w-100 py-3">
     </form>
 </div>
 @endsection('content')
