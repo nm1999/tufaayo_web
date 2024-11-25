@@ -9,7 +9,7 @@
                 <h4>Home Page</h4>
                 <div class="form-group">
                     <label for="">Home page Background Image</label><br>
-                    <input type="file" name="background_image">
+                    <input type="file" name="home_background_image">
                 </div>
                 
                 <div class="form-group">

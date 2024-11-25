@@ -9,7 +9,18 @@ class Setting extends Model
 {
     use HasFactory;
 
-    protected $table = "table_settings";
+    protected $table = "settings";
 
-    protected $fillable = ['key','value'];
+    protected $fillable = [
+        "home_background_image",
+        "title",
+        "school_visited",
+        "communities_visited",
+        "number_of_members",
+        "aboutus_background_image",
+        "location",
+        "phone_number",
+        "email_address",
+        "why_trust_us"
+    ];
 }

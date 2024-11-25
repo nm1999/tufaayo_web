@@ -32,7 +32,7 @@
                 <div class="col-lg-7 px-5 text-start">
                     <div class="h-100 d-inline-flex align-items-center py-3 me-4">
                         <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                        <small> {{ getValue("our_location") }}</small>
+                        <small> {{ setValue()->location }}</small>
                     </div>
                     <div class="h-100 d-inline-flex align-items-center py-3">
                         <small class="far fa-clock text-primary me-2"></small>
@@ -42,7 +42,7 @@
                 <div class="col-lg-5 px-5 text-end">
                     <div class="h-100 d-inline-flex align-items-center py-3 me-4">
                         <small class="fa fa-phone-alt text-primary me-2"></small>
-                        <small>{{ getValue("our_phone_contact") }}</small>
+                        <small>{{ setValue()->phone_number }}</small>
                     </div>
                     <div class="h-100 d-inline-flex align-items-center">
                         <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
