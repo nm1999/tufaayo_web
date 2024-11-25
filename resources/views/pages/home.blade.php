@@ -2,26 +2,26 @@
 @section('content')
 <div>
     <!-- Header Start -->
-    <div class="container-fluid header home-bg-image p-0 mb-5">
+    <div class="container-fluid header  p-0 mb-5" style="background:url({{ asset('settings').'/'.setValue()->home_background_image }})">
       <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
         <div class="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
-          <h1 class="display-4 text-white mb-5"> {{ getValue("title") }} </h1>
+          <h1 class="display-4 text-white mb-5"> {{ setValue()->title }} </h1>
           <div class="row g-4">
             <div class="col-sm-4">
               <div class="border-start border-light ps-4">
-                <h2 class="text-white mb-1" data-toggle="counter-up">6</h2>
+                <h2 class="text-white mb-1" data-toggle="counter-up">{{ setValue()->school_visited }}</h2>
                 <p class="text-light mb-0">Visited Schools</p>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="border-start border-light ps-4">
-                <h2 class="text-white mb-1" data-toggle="counter-up">124</h2>
+                <h2 class="text-white mb-1" data-toggle="counter-up">{{ setValue()->number_of_members }}</h2>
                 <p class="text-light mb-0">Members</p>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="border-start border-light ps-4">
-                <h2 class="text-white mb-1" data-toggle="counter-up">4</h2>
+                <h2 class="text-white mb-1" data-toggle="counter-up">{{ setValue()->communities_visited }}</h2>
                 <p class="text-light mb-0">Communities</p>
               </div>
             </div>
@@ -72,10 +72,7 @@
             <p class="d-inline-block border rounded-pill py-1 px-4">About Us</p>
             <h1 class="mb-4">Why You Should Trust Us? Get Know About Us!</h1>
             <p>
-              {{ getValue("why_you_should_trust_us") }}
-            </p>
-            <p class="mb-4">
-              {{ getValue("why_you_should_trust_us_description") }}
+              {{ setValue()->why_trust_us }}
             </p>
             <p><i class="far fa-check-circle text-primary me-3"></i>Quality health care</p>
             <p><i class="far fa-check-circle text-primary me-3"></i>Only Qualified Doctors</p>
@@ -110,10 +107,10 @@
                 <i class="fa fa-heartbeat text-primary fs-4"></i>
               </div>
               <h4 class="mb-3">
-                {{ getValue('service1') }}                 
+                setValue services                  
               </h4>
               <p class="mb-4">
-                {{ getValue('service1_description') }}
+                
               </p>
               <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
             </div>
@@ -126,9 +123,9 @@
               >
                 <i class="fa fa-x-ray text-primary fs-4"></i>
               </div>
-              <h4 class="mb-3">{{ getValue('service2') }}  </h4>
+              <h4 class="mb-3"> </h4>
               <p class="mb-4">
-                {{ getValue('service2_description') }}
+                
               </p>
               <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
             </div>
@@ -141,10 +138,8 @@
               >
                 <i class="fa fa-brain text-primary fs-4"></i>
               </div>
-              <h4 class="mb-3">{{ getValue('service3') }}</h4>
-              <p class="mb-4">
-                {{ getValue('service3_description') }}
-              </p>
+              <h4 class="mb-3">service3</h4>
+             
               <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
             </div>
           </div>
@@ -156,9 +151,9 @@
               >
                 <i class="fa fa-wheelchair text-primary fs-4"></i>
               </div>
-              <h4 class="mb-3">{{ getValue('service4') }} </h4>
+              <h4 class="mb-3">service4 </h4>
               <p class="mb-4">
-                {{ getValue('service4_description') }}
+                service4_description
               </p>
               <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
             </div>
@@ -171,9 +166,9 @@
               >
                 <i class="fa fa-tooth text-primary fs-4"></i>
               </div>
-              <h4 class="mb-3">{{ getValue('service5') }}</h4>
+              <h4 class="mb-3">service5</h4>
               <p class="mb-4">
-                {{ getValue('service5_description') }}
+                service5_description
               </p>
               <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
             </div>
@@ -186,9 +181,9 @@
               >
                 <i class="fa fa-vials text-primary fs-4"></i>
               </div>
-              <h4 class="mb-3">{{ getValue('service6') }}</h4>
+              <h4 class="mb-3">service6</h4>
               <p class="mb-4">
-                {{ getValue('service6_description') }}
+                service6_description
               </p>
               <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
             </div>
@@ -207,7 +202,7 @@
               <p class="d-inline-block border rounded-pill text-light py-1 px-4">Features</p>
               <h1 class="text-white mb-4">Why Choose Us</h1>
               <p class="text-white mb-4 pb-2">
-                {{ getValue('why_choose_us_description') }}
+                {{ setValue()->why_trust_us }}
               </p>
               <div class="row g-4">
                 <div class="col-6">

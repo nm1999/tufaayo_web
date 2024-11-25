@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Setting;
+use App\Models\Blog;
 
 class Controller
 {
@@ -18,8 +19,9 @@ class Controller
         return view('pages.contactus');
     }
     
-    public function blog(){
-        return view('pages.blog');
+    public function blogPost(){
+        $blogs = Blog::orderBy('id','desc')->get();
+        return view('pages.blog',compact('blogs'));
     }
 
     public function data(){
@@ -32,18 +34,59 @@ class Controller
     }
 
     public function adminPanel(){
-        $setting = Setting::all();
+        $setting = Setting::orderBy('id','desc')->first();
         return view('admin.home', compact('setting'));
     }
 
     public function saveSetting(Request $request){
-        $setting = Setting::all();
-        foreach ($request->all() as $key => $value) {
-            Setting::where('key',$key)->update([
-                "value"=> $value
-            ]);
-        }
+        $home_bg = $request->file('home_background_image');
+        $title = $request->input('title');
+        $school_visited = $request->input('school_visited');
+        $communities_visited = $request->input('communities_visited');
+        $number_of_members = $request->input('number_of_members');
+        $aboutus_background_image = $request->file('aboutus_background_image');
+        $location = $request->input('location');
+        $phone_number = $request->input('phone_number');
+        $email_address = $request->input('email_address');
+        $why_trust_us = $request->input('why_trust_us');
 
-        return redirect()->route('adminPanel');
+        //saving our images
+        $home_bg_name = uniqid() . '.' .$home_bg->getClientOriginalExtension();
+        $aboutus_background_image_name = uniqid() . '.' .$aboutus_background_image->getClientOriginalExtension();
+        $home_bg->move(public_path('settings'), $home_bg_name);
+        $aboutus_background_image->move(public_path('settings'), $aboutus_background_image_name);
+
+        $setting = Setting::orderBy('id','desc')->first();
+
+        $setting->home_background_image = $home_bg_name;
+        $setting->title = $title;
+        $setting->school_visited = $school_visited;
+        $setting->communities_visited = $communities_visited;
+        $setting->number_of_members = $number_of_members;
+        $setting->aboutus_background_image = $aboutus_background_image_name;
+        $setting->location =$location;
+        $setting->phone_number = $phone_number;
+        $setting->email_address = $email_address;
+        $setting->why_trust_us = $why_trust_us;
+
+        $setting->save();
+        return redirect()->route('adminPanel')->with('message','Settings Updated successfully');
+    }
+
+    public function saveBlog(Request $req){
+        $title = $req->input('title');
+        $desc = $req->input('description');
+        $file = $req->file('blog_image');
+
+        $filename = uniqid() . '.' .$file->getClientOriginalExtension();
+        $file->move(public_path('blogs'), $filename);
+
+        $blog = Blog::create([
+            "title"=>$title,
+            "description"=>$desc,
+            "blog_image"=>$filename
+        ]);
+
+        return redirect()->route('adminPanel')->with('message','Blog added successfully');
     }
 }
