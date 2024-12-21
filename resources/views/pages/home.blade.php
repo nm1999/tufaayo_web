@@ -2,7 +2,8 @@
 @section('content')
 <div>
     <!-- Header Start -->
-    <div class="container-fluid header  p-0 mb-5" style="background:url({{ asset('settings').'/'.setValue()->home_background_image }})">
+    <div class="container-fluid header  p-0 mb-5" 
+      style="background:url({{ asset('settings').'/'.setValue()->home_background_image }});background-repeat: no-repeat;background-size: cover;">
       <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
         <div class="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
           <h1 class="display-4 text-white mb-5"> {{ setValue()->title }} </h1>

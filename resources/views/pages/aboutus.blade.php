@@ -2,7 +2,8 @@
 @section('content')
 <div class="">
    <!-- Page Header Start -->
-   <div class="container-fluid page-header py-5 mb-5 wow fadeIn" style="background:url({{ asset('settings').'/'.setValue()->aboutus_background_image }})" data-wow-delay="0.1s">
+   <div class="container-fluid page-header py-5 mb-5 wow fadeIn" 
+        style="background-image:url({{ asset('settings').'/'.setValue()->aboutus_background_image }});background-repeat: no-repeat;background-size: cover; " data-wow-delay="0.1s">
         <div class="container py-5">
             <h1 class="display-3 tufaayo-color mb-3 animated slideInDown">About Us</h1>
             <nav aria-label="breadcrumb animated slideInDown">
