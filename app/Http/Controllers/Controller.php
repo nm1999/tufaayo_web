@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Setting;
 use App\Models\Blog;
+use App\Models\Service;
 
 class Controller
 {
@@ -89,4 +90,23 @@ class Controller
 
         return redirect()->route('adminPanel')->with('message','Blog added successfully');
     }
+   
+    public function saveService(Request $req){
+        $title = $req->input('title');
+        $desc = $req->input('description');
+        $file = $req->file('image');
+
+        $filename = uniqid() . '.' .$file->getClientOriginalExtension();
+        $file->move(public_path('services'), $filename);
+
+        $blog = Service::create([
+            "title"=>$title,
+            "description"=>$desc,
+            "image"=>$filename
+        ]);
+
+        return redirect()->route('adminPanel')->with('message','Service added successfully');
+    }
+
+
 }

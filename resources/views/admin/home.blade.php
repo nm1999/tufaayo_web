@@ -89,5 +89,28 @@
             <br>
         <input type="submit" class="btn btn-primary w-100 py-3">
     </form>
+
+    <br>
+    <form action="{{ route('save.service') }}" method="post" enctype="multipart/form-data">
+        @csrf
+        <h4>Our services form</h4>
+        <div class="formgroup">
+            <label for="">title</label>
+            <input type="text" name="title" class="form-control" required>
+        </div>
+       
+        <div class="formgroup">
+            <label for="">Description</label>
+            <input type="text" name="description" class="form-control" required>
+        </div>
+
+        <div class="formgroup">
+            <label for="">Service photo</label>
+            <input type="file" name="image" class="form-control" required>
+        </div>
+            <br>
+        <input type="submit" class="btn btn-primary w-100 py-3">
+    </form>
+
 </div>
 @endsection('content')
