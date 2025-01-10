@@ -7,7 +7,7 @@
       @foreach($blogs as $blog)
       <div class="col-md-4 col-sm-12 col-lg-4">
         <div class="wow fadeInUp p-2" data-wow-duration="1s" data-wow-delay="0.25s">
-          <p style="font-weight:500">{{ $blog->title }}</p>
+          <p style="font-weight:500;" class="text-primary">{{ $blog->title }}</p>
           <div class="image-size" style="
             background-image:url({{ asset('blogs').'/'.$blog->blog_image }});
             background-size:cover;

@@ -4,6 +4,7 @@
 /public/hot
 /public/storage
 /public/blogs
+/public/services
 /public/settings
 /storage/*.key
 /vendor

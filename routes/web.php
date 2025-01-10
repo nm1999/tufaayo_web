@@ -11,3 +11,4 @@ Route::get('/response', [Controller::class,'data'])->name('data');
 Route::get('/admin-panel', [Controller::class,'adminPanel'])->name('adminPanel');
 Route::post('/save/settings', [Controller::class,'saveSetting'])->name('save.settings');
 Route::post('/save/blog', [Controller::class,'saveBlog'])->name('save.blog');
+Route::post('/save/service', [Controller::class,'saveService'])->name('save.service');
