@@ -99,45 +99,21 @@
           <h1>Our Community Services</h1>
         </div>
         <div class="row g-4">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="">
-              <p style="font-weight:500">Sugar daddy awareness</p>
-              <div class="img-fluid" style="
-                  background-image:url({{ asset('img/2.jpeg') }});
-                  background-size:cover;
-                  background-repeat:no-repeat;
-                  width:auto;
-                  height:250px
-                "></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo tempora velit deleniti itaque quibusdam! Id, at. Laborum mollitia pariatur deleniti dolorum necessitatibus totam quae, aperiam quisquam? Aspernatur, ratione sint?</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="">
-                <p style="font-weight:500">Community sanitation</p>
+          @foreach(getServices() as $service)
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="">
+                <p style="font-weight:500">{{ $service->title }}</p>
                 <div class="img-fluid" style="
-                  background-image:url({{ asset('img/1.jpeg') }});
-                  background-size:cover;
-                  background-repeat:no-repeat;
-                  width:auto;
-                  height:250px
-                "></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo tempora velit deleniti itaque quibusdam! Id, at. Laborum mollitia pariatur deleniti dolorum necessitatibus totam quae, aperiam quisquam? Aspernatur, ratione sint?</p>
+                    background-image:url({{ asset('services').'/'.$service->image }});
+                    background-size:cover;
+                    background-repeat:no-repeat;
+                    width:auto;
+                    height:250px
+                  "></div>
+                <p>{{ $service->description }}</p>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="">
-                <p style="font-weight:500">Back to school support</p>
-                <div class="img-fluid" style="
-                  background-image:url({{ asset('img/3.jpeg') }});
-                  background-size:cover;
-                  background-repeat:no-repeat;
-                  width:auto;
-                  height:250px
-                "></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo tempora velit deleniti itaque quibusdam! Id, at. Laborum mollitia pariatur deleniti dolorum necessitatibus totam quae, aperiam quisquam? Aspernatur, ratione sint?</p>
-            </div>
-          </div>
+          @endforeach
         </div>
       </div>
     </div>
