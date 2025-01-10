@@ -32,7 +32,6 @@
                 @endforeach                
               </div>
             </div>
-            <div class="col-md-6 col-sm-6 col-lg-12"></div>
         </div>
       </div>
       <div class="col-md-3 col-lg-3 col-sm-12">

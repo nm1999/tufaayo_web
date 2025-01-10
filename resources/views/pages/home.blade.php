@@ -100,93 +100,42 @@
         </div>
         <div class="row g-4">
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="service-item bg-light rounded h-100 p-5">
-              <div
-                class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
-                style="width: 65px; height: 65px"
-              >
-                <i class="fa fa-heartbeat text-primary fs-4"></i>
-              </div>
-              <h4 class="mb-3">
-                setValue services                  
-              </h4>
-              <p class="mb-4">
-                
-              </p>
-              <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+            <div class="">
+              <p style="font-weight:500">Sugar daddy awareness</p>
+              <div class="img-fluid" style="
+                  background-image:url({{ asset('img/2.jpeg') }});
+                  background-size:cover;
+                  background-repeat:no-repeat;
+                  width:auto;
+                  height:250px
+                "></div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo tempora velit deleniti itaque quibusdam! Id, at. Laborum mollitia pariatur deleniti dolorum necessitatibus totam quae, aperiam quisquam? Aspernatur, ratione sint?</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="service-item bg-light rounded h-100 p-5">
-              <div
-                class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
-                style="width: 65px; height: 65px"
-              >
-                <i class="fa fa-x-ray text-primary fs-4"></i>
-              </div>
-              <h4 class="mb-3"> </h4>
-              <p class="mb-4">
-                
-              </p>
-              <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+            <div class="">
+                <p style="font-weight:500">Community sanitation</p>
+                <div class="img-fluid" style="
+                  background-image:url({{ asset('img/1.jpeg') }});
+                  background-size:cover;
+                  background-repeat:no-repeat;
+                  width:auto;
+                  height:250px
+                "></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo tempora velit deleniti itaque quibusdam! Id, at. Laborum mollitia pariatur deleniti dolorum necessitatibus totam quae, aperiam quisquam? Aspernatur, ratione sint?</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="service-item bg-light rounded h-100 p-5">
-              <div
-                class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
-                style="width: 65px; height: 65px"
-              >
-                <i class="fa fa-brain text-primary fs-4"></i>
-              </div>
-              <h4 class="mb-3">service3</h4>
-             
-              <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="service-item bg-light rounded h-100 p-5">
-              <div
-                class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
-                style="width: 65px; height: 65px"
-              >
-                <i class="fa fa-wheelchair text-primary fs-4"></i>
-              </div>
-              <h4 class="mb-3">service4 </h4>
-              <p class="mb-4">
-                service4_description
-              </p>
-              <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="service-item bg-light rounded h-100 p-5">
-              <div
-                class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
-                style="width: 65px; height: 65px"
-              >
-                <i class="fa fa-tooth text-primary fs-4"></i>
-              </div>
-              <h4 class="mb-3">service5</h4>
-              <p class="mb-4">
-                service5_description
-              </p>
-              <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="service-item bg-light rounded h-100 p-5">
-              <div
-                class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
-                style="width: 65px; height: 65px"
-              >
-                <i class="fa fa-vials text-primary fs-4"></i>
-              </div>
-              <h4 class="mb-3">service6</h4>
-              <p class="mb-4">
-                service6_description
-              </p>
-              <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+            <div class="">
+                <p style="font-weight:500">Back to school support</p>
+                <div class="img-fluid" style="
+                  background-image:url({{ asset('img/3.jpeg') }});
+                  background-size:cover;
+                  background-repeat:no-repeat;
+                  width:auto;
+                  height:250px
+                "></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo tempora velit deleniti itaque quibusdam! Id, at. Laborum mollitia pariatur deleniti dolorum necessitatibus totam quae, aperiam quisquam? Aspernatur, ratione sint?</p>
             </div>
           </div>
         </div>
