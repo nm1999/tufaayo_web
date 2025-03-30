@@ -22,6 +22,7 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    @vite(['resources/js/app.js'])
 </head>
 <body>
     
@@ -78,6 +79,7 @@
             <!-- Navbar End -->
 
         <div class="body">
+            <div id="app"></div>
             @yield('content')
         </div>
 
