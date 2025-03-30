@@ -54,7 +54,7 @@
 </template>
 <script>
 export default {
-    name: "footer",
+    name: "WebFooter",
     props:{
         location: {
             type : String,

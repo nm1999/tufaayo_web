@@ -8,19 +8,19 @@
             <router-view></router-view>
         </div>
         <div>
-            <footer location="" PhoneNumber="" emailAddress=""></footer>
+            <WebFooter location="" PhoneNumber="" emailAddress="" />
         </div>
     </div>
 </template>
 
 <script>
 import TopBar from './TopBar.vue';
-import footer from './footer.vue';
+import WebFooter from './WebFooter.vue';
 export default {
     name:"index",
     components:{
         TopBar,
-        footer
+        WebFooter
     }
 }
 </script>
