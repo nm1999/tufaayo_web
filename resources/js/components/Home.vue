@@ -1,39 +1,62 @@
 <template>
     <div>
         <!-- Header Start -->
-        
+        <Banner
+            bgImageUrl="http://127.0.0.1:8000/public/img/banner.jpeg"
+            bannerTitle="Banner number one"
+            description="This is the banner sub title"
+        />
         <!-- Header End -->
 
         <!-- About Start -->
         <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                <div class="d-flex flex-column">
-                <img class="img-fluid rounded w-75 align-self-end" src="../../../public/img/1.jpeg" alt="" />
-                <img
-                    class="img-fluid rounded w-50 bg-white pt-3 pe-3"
-                    src="../../../public/img/2.jpeg"
-                    alt=""
-                    style="margin-top: -25%"
-                />
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="d-flex flex-column">
+                            <img
+                                class="img-fluid rounded w-75 align-self-end"
+                                src="../../../public/img/1.jpeg"
+                                alt=""
+                            />
+                            <img
+                                class="img-fluid rounded w-50 bg-white pt-3 pe-3"
+                                src="../../../public/img/2.jpeg"
+                                alt=""
+                                style="margin-top: -25%"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <p class="d-inline-block border rounded-pill py-1 px-4">
+                            About Us
+                        </p>
+                        <h1 class="mb-4">
+                            Why You Should Trust Us? Get Know About Us!
+                        </h1>
+                        <p>
+                            {{ why_trust_us }}
+                        </p>
+                        <p>
+                            <i class="far fa-check-circle text-primary me-3"></i
+                            >Quality health care
+                        </p>
+                        <p>
+                            <i class="far fa-check-circle text-primary me-3"></i
+                            >Only Qualified Doctors
+                        </p>
+                        <p>
+                            <i class="far fa-check-circle text-primary me-3"></i
+                            >Medical Research Professionals
+                        </p>
+                        <a
+                            class="btn btn-primary rounded-pill py-3 px-5 mt-3"
+                            href=""
+                            >Read More</a
+                        >
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                <p class="d-inline-block border rounded-pill py-1 px-4">About Us</p>
-                <h1 class="mb-4">Why You Should Trust Us? Get Know About Us!</h1>
-                <p>
-                {{ why_trust_us }}
-                </p>
-                <p><i class="far fa-check-circle text-primary me-3"></i>Quality health care</p>
-                <p><i class="far fa-check-circle text-primary me-3"></i>Only Qualified Doctors</p>
-                <p>
-                <i class="far fa-check-circle text-primary me-3"></i>Medical Research Professionals
-                </p>
-                <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="">Read More</a>
-            </div>
-            </div>
-        </div>
         </div>
         <!-- About End -->
 
@@ -41,114 +64,151 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div
-                class="text-center mx-auto mb-5 wow fadeInUp"
-                data-wow-delay="0.1s"
-                style="max-width: 600px"
+                    class="text-center mx-auto mb-5 wow fadeInUp"
+                    data-wow-delay="0.1s"
+                    style="max-width: 600px"
                 >
-                <p class="d-inline-block border rounded-pill py-1 px-4">Services</p>
-                <h1>Our Community Services</h1>
+                    <p class="d-inline-block border rounded-pill py-1 px-4">
+                        Services
+                    </p>
+                    <h1>Our Community Services</h1>
                 </div>
-                <div class="row g-4">
-                
-                </div>
+                <div class="row g-4"></div>
             </div>
         </div>
         <!-- Service End -->
 
         <!-- Feature Start -->
         <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0">
-        <div class="container feature px-lg-0">
-            <div class="row g-0 mx-lg-0">
-            <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
-                <div class="p-lg-5 ps-lg-0">
-                <p class="d-inline-block border rounded-pill text-light py-1 px-4">Features</p>
-                <h1 class="text-white mb-4">Why Choose Us</h1>
-                <p class="text-white mb-4 pb-2">
-                    {{ why_trust_us }}
-                </p>
-                <div class="row g-4">
-                    <div class="col-6">
-                    <div class="d-flex align-items-center">
-                        <div
-                        class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
-                        style="width: 55px; height: 55px"
-                        >
-                        <i class="fa fa-user-md text-primary"></i>
-                        </div>
-                        <div class="ms-4">
-                        <p class="text-white mb-2">Experience</p>
-                        <h5 class="text-white mb-0">Doctors</h5>
+            <div class="container feature px-lg-0">
+                <div class="row g-0 mx-lg-0">
+                    <div
+                        class="col-lg-6 feature-text py-5 wow fadeIn"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="p-lg-5 ps-lg-0">
+                            <p
+                                class="d-inline-block border rounded-pill text-light py-1 px-4"
+                            >
+                                Features
+                            </p>
+                            <h1 class="text-white mb-4">Why Choose Us</h1>
+                            <p class="text-white mb-4 pb-2">
+                                {{ why_trust_us }}
+                            </p>
+                            <div class="row g-4">
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <div
+                                            class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                            style="width: 55px; height: 55px"
+                                        >
+                                            <i
+                                                class="fa fa-user-md text-primary"
+                                            ></i>
+                                        </div>
+                                        <div class="ms-4">
+                                            <p class="text-white mb-2">
+                                                Experience
+                                            </p>
+                                            <h5 class="text-white mb-0">
+                                                Doctors
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <div
+                                            class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                            style="width: 55px; height: 55px"
+                                        >
+                                            <i
+                                                class="fa fa-check text-primary"
+                                            ></i>
+                                        </div>
+                                        <div class="ms-4">
+                                            <p class="text-white mb-2">
+                                                Quality
+                                            </p>
+                                            <h5 class="text-white mb-0">
+                                                Services
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <div
+                                            class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                            style="width: 55px; height: 55px"
+                                        >
+                                            <i
+                                                class="fa fa-comment-medical text-primary"
+                                            ></i>
+                                        </div>
+                                        <div class="ms-4">
+                                            <p class="text-white mb-2">
+                                                Positive
+                                            </p>
+                                            <h5 class="text-white mb-0">
+                                                Consultation
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <div
+                                            class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                            style="width: 55px; height: 55px"
+                                        >
+                                            <i
+                                                class="fa fa-headphones text-primary"
+                                            ></i>
+                                        </div>
+                                        <div class="ms-4">
+                                            <p class="text-white mb-2">
+                                                24 Hours
+                                            </p>
+                                            <h5 class="text-white mb-0">
+                                                Support
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    </div>
-                    <div class="col-6">
-                    <div class="d-flex align-items-center">
-                        <div
-                        class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
-                        style="width: 55px; height: 55px"
-                        >
-                        <i class="fa fa-check text-primary"></i>
+                    <div
+                        class="col-lg-6 pe-lg-0 wow fadeIn"
+                        data-wow-delay="0.5s"
+                        style="min-height: 400px"
+                    >
+                        <div class="position-relative h-100">
+                            <img
+                                class="position-absolute img-fluid w-100 h-100"
+                                src="../../../public/img/3.jpeg"
+                                style="object-fit: cover"
+                                alt=""
+                            />
                         </div>
-                        <div class="ms-4">
-                        <p class="text-white mb-2">Quality</p>
-                        <h5 class="text-white mb-0">Services</h5>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-6">
-                    <div class="d-flex align-items-center">
-                        <div
-                        class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
-                        style="width: 55px; height: 55px"
-                        >
-                        <i class="fa fa-comment-medical text-primary"></i>
-                        </div>
-                        <div class="ms-4">
-                        <p class="text-white mb-2">Positive</p>
-                        <h5 class="text-white mb-0">Consultation</h5>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-6">
-                    <div class="d-flex align-items-center">
-                        <div
-                        class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
-                        style="width: 55px; height: 55px"
-                        >
-                        <i class="fa fa-headphones text-primary"></i>
-                        </div>
-                        <div class="ms-4">
-                        <p class="text-white mb-2">24 Hours</p>
-                        <h5 class="text-white mb-0">Support</h5>
-                        </div>
-                    </div>
                     </div>
                 </div>
-                </div>
             </div>
-            <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px">
-                <div class="position-relative h-100">
-                <img
-                    class="position-absolute img-fluid w-100 h-100"
-                    src="../../../public/img/3.jpeg"
-                    style="object-fit: cover"
-                    alt=""
-                />
-                </div>
-            </div>
-            </div>
-        </div>
         </div>
         <!-- Feature End -->
 
         <!-- latest activities -->
-         <div class="container py-5 ">
+        <div class="container py-5">
             <div
                 class="text-center mx-auto mb-5 wow fadeInUp"
                 data-wow-delay="0.1s"
                 style="max-width: 600px"
             >
-                <p class="d-inline-block border rounded-pill py-1 px-4">Visits</p>
+                <p class="d-inline-block border rounded-pill py-1 px-4">
+                    Visits
+                </p>
                 <h1>Out reaches</h1>
             </div>
 
@@ -166,17 +226,19 @@
                     <BlogPost />
                 </div>
             </div>
-         </div>
-      <!-- end of latest activities -->
+        </div>
+        <!-- end of latest activities -->
 
-      <!-- tufaayo online audience -->
+        <!-- tufaayo online audience -->
         <div class="container">
             <div
                 class="text-center mx-auto mb-5 wow fadeInUp"
                 data-wow-delay="0.1s"
                 style="max-width: 600px"
             >
-                <p class="d-inline-block border rounded-pill py-1 px-4">Social Media</p>
+                <p class="d-inline-block border rounded-pill py-1 px-4">
+                    Social Media
+                </p>
                 <h1>Tufaayo Online Channels</h1>
             </div>
 
@@ -184,63 +246,72 @@
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <div class="">
                         <h5>Follow Us</h5>
-                        <ul style="list-style: none;">
+                        <ul style="list-style: none">
                             <li>
-                                <i class="fab fa-twitter"></i> tufaayo foundation
+                                <i class="fab fa-twitter"></i> tufaayo
+                                foundation
                             </li>
-                            <li><i class="fab fa-facebook"></i> tufaayo foundation</li>
-                            <li><i class="fab fa-linkedin"></i> tufaayo foundation</li>
-                            <li><i class="fab fa-youtube"></i> tufaayo foundation</li>
+                            <li>
+                                <i class="fab fa-facebook"></i> tufaayo
+                                foundation
+                            </li>
+                            <li>
+                                <i class="fab fa-linkedin"></i> tufaayo
+                                foundation
+                            </li>
+                            <li>
+                                <i class="fab fa-youtube"></i> tufaayo
+                                foundation
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <iframe 
-                        src="https://www.youtube.com/watch?v=YbGAUEjTKg4&t=10s" 
+                    <iframe
+                        src="https://www.youtube.com/watch?v=YbGAUEjTKg4&t=10s"
                         width="500px"
-                        height="300px" 
+                        height="300px"
                         frameborder="0"
-                        style="border-radius:20px;"
+                        style="border-radius: 20px"
                     ></iframe>
                 </div>
             </div>
         </div>
 
-      <!-- end of tufaayo online audience -->
-
-
+        <!-- end of tufaayo online audience -->
     </div>
 </template>
 
 <script>
-
-import BlogPost from './common/BlogPost.vue';
+import BlogPost from "./common/BlogPost.vue";
+import Banner from "./common/Banner.vue";
 export default {
-    name :"Home",
-    components:{
-        BlogPost
+    name: "Home",
+    components: {
+        BlogPost,
+        Banner,
     },
-    props:{
-        title:{
-            type:String,
-            required:true
-        },
-        school_visited:{
-            type:Number,
-            required:true
-        },
-        communities_visited:{
-            type:Number,
-            required: true
-        },
-        number_of_members:{
-            type: Number,
-            required: true
-        },
-        why_trust_us :{
+    props: {
+        title: {
             type: String,
-            required: true
-        }
-    }
-}
+            required: true,
+        },
+        school_visited: {
+            type: Number,
+            required: true,
+        },
+        communities_visited: {
+            type: Number,
+            required: true,
+        },
+        number_of_members: {
+            type: Number,
+            required: true,
+        },
+        why_trust_us: {
+            type: String,
+            required: true,
+        },
+    },
+};
 </script>

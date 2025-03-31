@@ -1,19 +1,11 @@
 <template>
     <div class="">
    <!-- Page Header Start -->
-   <div class="container-fluid page-header py-5 mb-5 wow fadeIn" 
-        style="background-repeat: no-repeat;background-size: cover; " data-wow-delay="0.1s">
-        <div class="container py-5">
-            <h1 class="display-3 tufaayo-color mb-3 animated slideInDown">About Us</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb text-uppercase mb-0">
-                    <li class="breadcrumb-item"><router-link class="text-primary" to="/">Home</router-link></li>
-                    <li class="breadcrumb-item"><router-link class="text-primary" to="/contact-us">Contact</router-link></li>
-                    <li class="breadcrumb-item tufaayo-color active" aria-current="page">About</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
+    <Banner
+        bgImageUrl="http://127.0.0.1:8000/public/img/banner.jpeg"
+        bannerTitle="Banner number one"
+        description="This is the banner sub title"
+    />
     <!-- Page Header End -->
 
 
@@ -127,7 +119,11 @@
 </template>
 
 <script>
+import Banner from './common/Banner.vue';
 export default {
-    name:"Aboutus"
+    name:"Aboutus",
+    components:{
+        Banner
+    }
 }
 </script>
