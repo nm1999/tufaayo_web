@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="topbar">
          <!-- Topbar Start -->
          <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
             <div class="row gx-0 d-none d-lg-flex">
@@ -66,4 +66,13 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.topbar{
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid rgb(218, 213, 213);
+    z-index: 10000;
+}
+</style>
 

@@ -22,6 +22,7 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/w3css.css') }}" rel="stylesheet">
     @vite(['resources/js/app.js'])
 </head>
 <body>    

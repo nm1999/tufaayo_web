@@ -190,17 +190,82 @@
         </div>
         <!-- Feature End -->
 
-      
+        <!-- latest activities -->
+         <div class="container py-5 ">
+            <div
+                class="text-center mx-auto mb-5 wow fadeInUp"
+                data-wow-delay="0.1s"
+                style="max-width: 600px"
+            >
+                <p class="d-inline-block border rounded-pill py-1 px-4">Visits</p>
+                <h1>Out reaches</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-3">
+                    <BlogPost />
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3">
+                    <BlogPost />
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3">
+                    <BlogPost />
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3">
+                    <BlogPost />
+                </div>
+            </div>
+         </div>
+      <!-- end of latest activities -->
+
+      <!-- tufaayo online audience -->
+        <div class="container">
+            <div
+                class="text-center mx-auto mb-5 wow fadeInUp"
+                data-wow-delay="0.1s"
+                style="max-width: 600px"
+            >
+                <p class="d-inline-block border rounded-pill py-1 px-4">Social Media</p>
+                <h1>Tufaayo Online Channels</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="">
+                        <h5>Follow Us</h5>
+                        <ul>
+                            <li><i class="fa fa-twitter"></i> tufaayofoundation</li>
+                            <li><i class="fa fa-facebook"></i> tufaayofoundation</li>
+                            <li><i class="fa fa-linkedin"></i> tufaayofoundation</li>
+                            <li><i class="fa fa-youtube"></i> tufaayofoundation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <iframe 
+                        src="https://www.youtube.com/watch?v=YbGAUEjTKg4&t=10s" 
+                        width="500px"
+                        height="300px" 
+                        frameborder="0"
+                        style="border-radius:20px;"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+
+      <!-- end of tufaayo online audience -->
+
 
     </div>
 </template>
 
 <script>
-import WebFooter from './WebFooter.vue';
+
+import BlogPost from './common/BlogPost.vue';
 export default {
     name :"Home",
     components:{
-        WebFooter
+        BlogPost
     },
     props:{
         title:{
