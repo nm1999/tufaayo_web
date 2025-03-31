@@ -2,7 +2,7 @@
     <div>
         <!-- Header Start -->
         <Banner
-            bgImageUrl="http://127.0.0.1:8000/public/img/banner.jpeg"
+            bgImageUrl="/img/1.jpg"
             bannerTitle="Banner number one"
             description="This is the banner sub title"
         />
