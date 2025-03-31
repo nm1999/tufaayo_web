@@ -1,7 +1,7 @@
 <template>
     <div class="banner" :style="backgroundImage">
         <div class="container" style="margin-top: 150px;margin-bottom: auto;">
-            <h2 class="text-white">{{bannerTitle}}</h2>
+            <h2 class="text-white" style="font-weight:bold">{{bannerTitle}}</h2>
             <h6>{{ description }}</h6>            
         </div>
     </div>

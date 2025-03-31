@@ -1,7 +1,7 @@
 <template>
     <div class="topbar">
          <!-- Topbar Start -->
-         <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+         <div class="container-fluid bg-primary text-white p-0 wow fadeIn" data-wow-delay="0.1s">
             <div class="row gx-0 d-none d-lg-flex">
                 <div class="col-lg-7 px-5 text-start">
                     <div class="h-100 d-inline-flex align-items-center py-3 me-4">
@@ -33,7 +33,7 @@
     <!-- Navbar Start -->
         <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
             <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-                <h1 class="m-0 text-primary"><i class="me-3">
+                <h1 class="m-0 text-primary" style="font-weight: bold;"><i class="me-3">
                     <img :src="'images/tufaayologo.png'" style="width:80px;height:80px" alt="">
                 </i><span style="color:#fd27dd">Tufaayo</span>  Foundation</h1>
             </a>
