@@ -1,56 +1,7 @@
 <template>
     <div>
-    <!-- Header Start -->
-        <div class="container-fluid header  p-0 mb-5" 
-        style="background-repeat: no-repeat;background-size: cover;">
-        <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
-            <div class="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
-            <h1 class="display-4 text-white mb-5"> {{ title }} </h1>
-            <div class="row g-4">
-                <div class="col-sm-4">
-                <div class="border-start border-light ps-4">
-                    <h2 class="text-white mb-1" data-toggle="counter-up">{{ school_visited }}</h2>
-                    <p class="text-light mb-0">Visited Schools</p>
-                </div>
-                </div>
-                <div class="col-sm-4">
-                <div class="border-start border-light ps-4">
-                    <h2 class="text-white mb-1" data-toggle="counter-up">{{ number_of_members }}</h2>
-                    <p class="text-light mb-0">Members</p>
-                </div>
-                </div>
-                <div class="col-sm-4">
-                <div class="border-start border-light ps-4">
-                    <h2 class="text-white mb-1" data-toggle="counter-up">{{ communities_visited }}</h2>
-                    <p class="text-light mb-0">Communities</p>
-                </div>
-                </div>
-            </div>
-            </div>
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-            <div class="owl-carousel header-carousel">
-                <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="../../../public/img/carousel-1.jpg" alt="" />
-                <div class="owl-carousel-text">
-                    <h1 class="display-1 text-white mb-0">Cardiology</h1>
-                </div>
-                </div>
-                <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="../../../public/img/carousel-2.jpg" alt="" />
-                <div class="owl-carousel-text">
-                    <h1 class="display-1 text-white mb-0">Neurology</h1>
-                </div>
-                </div>
-                <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="../../../public/img/carousel-3.jpg" alt="" />
-                <div class="owl-carousel-text">
-                    <h1 class="display-1 text-white mb-0">Pulmonary</h1>
-                </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        </div>
+        <!-- Header Start -->
+        
         <!-- Header End -->
 
         <!-- About Start -->
@@ -88,19 +39,19 @@
 
         <!-- Service Start -->
         <div class="container-xxl py-5">
-        <div class="container">
-            <div
-            class="text-center mx-auto mb-5 wow fadeInUp"
-            data-wow-delay="0.1s"
-            style="max-width: 600px"
-            >
-            <p class="d-inline-block border rounded-pill py-1 px-4">Services</p>
-            <h1>Our Community Services</h1>
+            <div class="container">
+                <div
+                class="text-center mx-auto mb-5 wow fadeInUp"
+                data-wow-delay="0.1s"
+                style="max-width: 600px"
+                >
+                <p class="d-inline-block border rounded-pill py-1 px-4">Services</p>
+                <h1>Our Community Services</h1>
+                </div>
+                <div class="row g-4">
+                
+                </div>
             </div>
-            <div class="row g-4">
-            
-            </div>
-        </div>
         </div>
         <!-- Service End -->
 
@@ -233,11 +184,13 @@
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <div class="">
                         <h5>Follow Us</h5>
-                        <ul>
-                            <li><i class="fa fa-twitter"></i> tufaayofoundation</li>
-                            <li><i class="fa fa-facebook"></i> tufaayofoundation</li>
-                            <li><i class="fa fa-linkedin"></i> tufaayofoundation</li>
-                            <li><i class="fa fa-youtube"></i> tufaayofoundation</li>
+                        <ul style="list-style: none;">
+                            <li>
+                                <i class="fab fa-twitter"></i> tufaayo foundation
+                            </li>
+                            <li><i class="fab fa-facebook"></i> tufaayo foundation</li>
+                            <li><i class="fab fa-linkedin"></i> tufaayo foundation</li>
+                            <li><i class="fab fa-youtube"></i> tufaayo foundation</li>
                         </ul>
                     </div>
                 </div>

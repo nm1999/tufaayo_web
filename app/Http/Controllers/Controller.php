@@ -14,7 +14,8 @@ class Controller
 
     public function vueIndex(){
         $blogs = Blog::orderBy('id','desc')->get();
-        return view('vue',compact('blogs'));
+        $settings = Setting::orderBy('id','desc')->first();
+        return view('vue',compact('blogs','settings'));
     }
 
     public function aboutus(){

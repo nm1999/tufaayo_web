@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="w3-card-4 w3-white">
+        <div class="w3-card-4 w3-round w3-white">
             <div class="card-content">
                 <img src="../../../../public/blogs/6744a9a302470.jpg" class="img-fluid" alt="">
             </div>

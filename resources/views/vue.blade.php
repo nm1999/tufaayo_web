@@ -29,10 +29,10 @@
 
     <div id="app">
         <index 
+            PhoneNumber="{{ $settings->phone_number }}"
+            emailAddress="{{ $settings->email_address }}"
+            location="{{ $settings->location }}"
             :blogs="{{ $blogs }}"
-            :PhoneNumber="{{ setValue()->phone_number }}"
-            :location="{{ setValue()->location }}"
-            emailAddress="info@tufaayofoundation.org"
         />
     </div>
 </body>

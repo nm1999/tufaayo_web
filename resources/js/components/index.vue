@@ -1,6 +1,6 @@
 <template>
     <div class="">
-        <TopBar PhoneNumber="+256 782 232 232" location="Lra city" />
+        <TopBar PhoneNumber="+256 782 232 232" location="Lira city"/>
         <div class="body">
             <router-view
                 :blogs="blogs"
