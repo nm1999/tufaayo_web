@@ -12,6 +12,12 @@ class Controller
         return view('pages.home');
     }
 
+    public function vueIndex(){
+        $blogs = Blog::orderBy('id','desc')->get();
+        $settings = Setting::orderBy('id','desc')->first();
+        return view('vue',compact('blogs','settings'));
+    }
+
     public function aboutus(){
         return view('pages.aboutus');
     }
@@ -21,6 +27,11 @@ class Controller
     }
     
     public function blogPost(){
+        $blogs = Blog::orderBy('id','desc')->get();
+        return view('pages.blog',compact('blogs'));
+    }
+    
+    public function blogs(){
         $blogs = Blog::orderBy('id','desc')->get();
         return view('pages.blog',compact('blogs'));
     }
