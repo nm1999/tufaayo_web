@@ -10,12 +10,12 @@
         v-for="blog in blogs"
         class="col-md-4 col-sm-12 col-lg-4">
         <div class="wow fadeInUp p-2" data-wow-duration="1s" data-wow-delay="0.25s">
-          <p style="font-weight:500;" class="text-primary">{{ blog.title }}</p>
+          <p style="font-weight:500;" class="text-primary">{{ blog.title }} {{ blog.blog_image }}</p>
           <div class="image-size" style="
-            background-image:url({{ asset('blogs').'/'.blog.blog_image }});
+            background-image:url('../../../public/blogs/6744b0183e801.jpg');
             background-size:cover;
             background-repeat:no-repeat;   
-            height:250px;
+            height:250px
           ">          
         </div>
         <br>

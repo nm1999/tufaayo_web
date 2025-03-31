@@ -20,7 +20,7 @@
                         </div>
                         <div class="ms-4">
                             <p class="mb-2">Call Us Now</p>
-                            <h5 class="mb-0">{{ phone_number }}</h5>
+                            <h5 class="mb-0">{{ PhoneNumber }}</h5>
                         </div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                         </div>
                         <div class="ms-4">
                             <p class="mb-2">Mail Us Now</p>
-                            <h5 class="mb-0" style="font-size:17px">{{ email_address }}</h5>
+                            <h5 class="mb-0" style="font-size:17px">{{ emailAddress }}</h5>
                         </div>
                     </div>
                 </div>
@@ -96,11 +96,11 @@ export default {
             type:String,
             required:true
         },
-        email_address:{
+        emailAddress:{
             type: String,
             required: true
         },
-        phone_number:{
+        PhoneNumber:{
             type:String,
             required: true
         }

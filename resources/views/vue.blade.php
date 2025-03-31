@@ -25,6 +25,14 @@
     @vite(['resources/js/app.js'])
 </head>
 <body>    
-    <div id="app"></div>
+
+    <div id="app">
+        <index 
+            :blogs="{{ $blogs }}"
+            :PhoneNumber="{{ setValue()->phone_number }}"
+            :location="{{ setValue()->location }}"
+            emailAddress="info@tufaayofoundation.org"
+        />
+    </div>
 </body>
 </html>
