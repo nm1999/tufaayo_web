@@ -9,10 +9,13 @@
             <BlogPost 
               v-for="blog in blogs"
               class="col-sm-12 col-md-3 col-lg-4 mt-4"
-              :imageSrc="blog.blog_image"
               :title="blog.title"
               :date="blog.created_at"
-            />             
+            >
+              <template #image>
+                  <img :src="blog.image" class="img-fluid" alt="">
+              </template>
+            </BlogPost>            
           </div>
           <div v-else>
               <p class="text-center">No blogs found</p>
@@ -22,7 +25,7 @@
 </template>
 
 <script>
-import BlogPost from './common/BlogPost.vue';
+import BlogPost from './BlogPost.vue';
 export default {
     name:"Blogs",
     components:{
@@ -34,6 +37,9 @@ export default {
             required: false,
             default:[]
         }
+    },
+    computed:{
+      
     }
 }
 </script>

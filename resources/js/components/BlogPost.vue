@@ -2,7 +2,7 @@
     <div>
         <div class="w3-card-4 w3-round w3-white">
             <div class="card-content">
-                <img :src="imageSrc" class="img-fluid" alt="">
+                <slot name="image"></slot>
             </div>
             <div class="card-footer">
                 <p class="title text-primary ">{{ title }}</p>
@@ -18,17 +18,13 @@
 export default {
     name:"BlogPost",
     props:{
-        imageSrc:{
-            type:String,
-            required:true
-        },
         title:{
             type:String,
             required: true
         },
         date:{
             type: String,
-            required:true
+            required:false
         }
     }
 }

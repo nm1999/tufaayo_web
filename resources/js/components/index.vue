@@ -7,8 +7,10 @@
                 :PhoneNumber="PhoneNumber"
                 :location="location"
                 :emailAddress="emailAddress"
+                :imagePath="imagePath"
             />
         </div>
+       
         <div>
             <WebFooter
                 :location="location"
@@ -45,6 +47,10 @@ export default {
             type: String,
             required: true,
         },
+        imagePath:{
+            type:String,
+            required:true
+        }
     },
 };
 </script>
