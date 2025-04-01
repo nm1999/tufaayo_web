@@ -228,7 +228,7 @@
                         title="sample"
                     >
                     <template #image>
-                            <img src="../../../public/images/6.jpeg" class="img-fluid" alt="">
+                            <img src="../../../public/images/7.jpeg" class="img-fluid" alt="">
                         </template>
                     </BlogPost>
                 </div>
@@ -274,7 +274,7 @@
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <iframe 
                         width="500" 
-                        height="560" 
+                        height="350" 
                         src="https://www.youtube.com/embed/s8578OFo9p8" 
                         title="Say NO to sugar daddies!💪Your worth isn’t defined by material things #NoToSugarDaddies #empowerment" 
                         frameborder="0" 

@@ -1,32 +1,31 @@
 <template>
     <div class="">
-        <h5 class="text-primary"> <span class="tufaayo-color">Follow</span> Us</h5>
+        <h5 class="text-primary">
+            <span class="tufaayo-color">Follow</span> Us
+        </h5>
         <ul style="list-style: none">
             <li>
-                <i class="fab fa-twitter"></i> tufaayo
-                foundation
+                <SocialMedia link="tufaayo foundation" icon="fa-twitter" />
             </li>
             <li>
-                <i class="fab fa-facebook"></i> tufaayo
-                foundation
+                <SocialMedia link="tufaayo foundation" icon="fa-facebook" />
             </li>
             <li>
-                <SocialMedia />
+                <SocialMedia link="tufaayo foundation" icon="fa-linkedin" />
             </li>
             <li>
-                <i class="fab fa-youtube"></i> tufaayo
-                foundation
+                <SocialMedia link="tufaayo foundation" icon="fa-youtube" color="tufaayo-color" />
             </li>
         </ul>
     </div>
 </template>
 
 <script>
-import SocialMedia from './SocialMedia.vue';
+import SocialMedia from "./SocialMedia.vue";
 export default {
-    name:"FollowUs",
-    components:{
-        SocialMedia
-    }
-}
+    name: "FollowUs",
+    components: {
+        SocialMedia,
+    },
+};
 </script>
