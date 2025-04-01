@@ -33,6 +33,7 @@
             emailAddress="{{ $settings->email_address }}"
             location="{{ $settings->location }}"
             :blogs="{{ $blogs }}"
+            imagePath="{{ asset('images') }}"
         />
     </div>
 </body>

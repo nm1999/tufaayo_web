@@ -2,8 +2,8 @@
     <div class="">
    <!-- Page Header Start -->
     <Banner
-        bgImageUrl="http://127.0.0.1:8000/public/img/banner.jpeg"
-        bannerTitle="Banner number one"
+        class="banner"
+        bannerTitle="More about tufaayo foundation"
         description="This is the banner sub title"
     />
     <!-- Page Header End -->
@@ -127,3 +127,11 @@ export default {
     }
 }
 </script>
+<style scoped>
+.banner {
+    background-image: url('../../../public/images/1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+</style>

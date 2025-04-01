@@ -14,6 +14,9 @@ class Controller
 
     public function vueIndex(){
         $blogs = Blog::orderBy('id','desc')->get();
+        foreach ($blogs as $blog) {
+            $blog->image = env('APP_URL').'blogs/'.$blog->blog_image;
+        }
         $settings = Setting::orderBy('id','desc')->first();
         return view('vue',compact('blogs','settings'));
     }

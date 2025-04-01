@@ -1,8 +1,8 @@
 <template>
     <div class="">
         <Banner
-            bgImageUrl="http://127.0.0.1:8000/public/img/banner.jpeg"
-            bannerTitle="Banner number one"
+            class="banner"
+            bannerTitle="Contact Us"
             description="This is the banner sub title"
         />
         <div class="container-xxl py-5">
@@ -174,3 +174,12 @@ export default {
     },
 };
 </script>
+
+<style scoped>
+.banner {
+    background-image: url('../../../public/images/6.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+</style>

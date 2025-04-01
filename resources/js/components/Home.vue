@@ -2,8 +2,9 @@
     <div>
         <!-- Header Start -->
         <Banner
+            class="banner"
             bgImageUrl="/img/1.jpg"
-            bannerTitle="Banner number one"
+            bannerTitle="Say No to Sugar Daddies !"
             description="This is the banner sub title"
         />
         <!-- Header End -->
@@ -188,7 +189,7 @@
                         <div class="position-relative h-100">
                             <img
                                 class="position-absolute img-fluid w-100 h-100"
-                                src="../../../public/img/3.jpeg"
+                                src="../../../public/images/9.jpeg"
                                 style="object-fit: cover"
                                 alt=""
                             />
@@ -214,16 +215,40 @@
 
             <div class="row">
                 <div class="col-sm-12 col-md-4 col-lg-3">
-                    <BlogPost />
+                    <BlogPost                        
+                        title="sample"
+                    >
+                    <template #image>
+                            <img src="../../../public/images/1.jpeg" class="img-fluid" alt="">
+                        </template>
+                </BlogPost>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-3">
-                    <BlogPost />
+                    <BlogPost                        
+                        title="sample"
+                    >
+                    <template #image>
+                            <img src="../../../public/images/7.jpeg" class="img-fluid" alt="">
+                        </template>
+                    </BlogPost>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-3">
-                    <BlogPost />
+                    <BlogPost                        
+                        title="sample"
+                    >
+                    <template #image>
+                            <img src="../../../public/images/5.jpeg" class="img-fluid" alt="">
+                        </template>
+                    </BlogPost>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-3">
-                    <BlogPost />
+                    <BlogPost 
+                       title="sample"
+                    >
+                        <template #image>
+                            <img src="../../../public/images/2.jpeg" class="img-fluid" alt="">
+                        </template>
+                    </BlogPost>
                 </div>
             </div>
         </div>
@@ -239,39 +264,23 @@
                 <p class="d-inline-block border rounded-pill py-1 px-4">
                     Social Media
                 </p>
-                <h1>Tufaayo Online Channels</h1>
+                <h1 class="text-primary"> <span class="tufaayo-color">Tufaayo</span> Online Channels</h1>
             </div>
 
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <div class="">
-                        <h5>Follow Us</h5>
-                        <ul style="list-style: none">
-                            <li>
-                                <i class="fab fa-twitter"></i> tufaayo
-                                foundation
-                            </li>
-                            <li>
-                                <i class="fab fa-facebook"></i> tufaayo
-                                foundation
-                            </li>
-                            <li>
-                                <i class="fab fa-linkedin"></i> tufaayo
-                                foundation
-                            </li>
-                            <li>
-                                <i class="fab fa-youtube"></i> tufaayo
-                                foundation
-                            </li>
-                        </ul>
-                    </div>
+                    <FollowUs />
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <iframe
-                        src="https://www.youtube.com/watch?v=YbGAUEjTKg4&t=10s"
-                        width="500px"
-                        height="300px"
-                        frameborder="0"
+                    <iframe 
+                        width="500" 
+                        height="350" 
+                        src="https://www.youtube.com/embed/s8578OFo9p8" 
+                        title="Say NO to sugar daddies!💪Your worth isn’t defined by material things #NoToSugarDaddies #empowerment" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen
                         style="border-radius: 20px"
                     ></iframe>
                 </div>
@@ -283,13 +292,15 @@
 </template>
 
 <script>
-import BlogPost from "./common/BlogPost.vue";
+import BlogPost from "./BlogPost.vue";
 import Banner from "./common/Banner.vue";
+import FollowUs from "./common/FollowUs.vue";
 export default {
     name: "Home",
     components: {
         BlogPost,
         Banner,
+        FollowUs
     },
     props: {
         title: {
@@ -312,6 +323,19 @@ export default {
             type: String,
             required: true,
         },
+        imagePath:{
+            type:String,
+            required:true
+        }
     },
 };
 </script>
+
+<style scoped>
+.banner {
+    background-image: url('../../../public/images/3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+</style>

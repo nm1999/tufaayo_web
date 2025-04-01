@@ -1,8 +1,8 @@
 <template>
     <div class="banner">
         <div class="container" style="margin-top: 150px;margin-bottom: auto;">
-            <h2 class="text-white" style="font-weight:bold">{{bannerTitle}}</h2>
-            <h6>{{ description }}</h6>            
+            <h1 class="text-white w3-animate-top " style="font-weight:bold">{{bannerTitle}}</h1>
+            <h6 class="tufaayo-color w3-animate-zoom">{{ description }}</h6>            
         </div>
     </div>
 </template>
@@ -35,8 +35,5 @@ export default {
     height:450px;
     width: 100%;
     padding-top:180px;
-    background-image: url('../../../../public/img/3.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 </style>
