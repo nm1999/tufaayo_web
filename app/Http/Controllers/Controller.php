@@ -8,9 +8,9 @@ use App\Models\Service;
 
 class Controller
 {
-    public function index(){
-        return view('pages.home');
-    }
+    // public function index(){
+    //     return view('pages.home');
+    // }
 
     public function vueIndex(){
         $blogs = Blog::orderBy('id','desc')->get();
