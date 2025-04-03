@@ -1,21 +1,24 @@
 <template>
     <div class="">
-        <TopBar PhoneNumber="+256 782 232 232" location="Lira city"/>
+        <TopBar :PhoneNumber="settings.phone_number" :location="settings.location"/>
         <div class="body">
+           
             <router-view
                 :blogs="blogs"
-                :PhoneNumber="PhoneNumber"
-                :location="location"
-                :emailAddress="emailAddress"
-                :imagePath="imagePath"
+                :PhoneNumber="settings.phone_number"
+                :location="settings.location"
+                :emailAddress="settings.email_address"
+                :why_trust_us="settings.why_trust_us"
+                :number_of_members="settings.number_of_members"
+                :communities_visited="settings.communities_visited"
+                :school_visited="settings.school_visited"
             />
         </div>
-       
         <div>
             <WebFooter
-                :location="location"
-                :PhoneNumber="PhoneNumber"
-                :emailAddress="emailAddress"
+                :location="settings.location"
+                :PhoneNumber="settings.phone_number"
+                :emailAddress="settings.email_address"
             />
         </div>
     </div>
@@ -35,20 +38,8 @@ export default {
             type: Array,
             required: true,
         },
-        PhoneNumber: {
-            type: String,
-            required: true,
-        },
-        location: {
-            type: String,
-            required: true,
-        },
-        emailAddress: {
-            type: String,
-            required: true,
-        },
-        imagePath:{
-            type:String,
+        settings:{
+            type:Object,
             required:true
         }
     },

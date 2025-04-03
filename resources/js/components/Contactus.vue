@@ -137,7 +137,7 @@
                         <div class="h-100" style="min-height: 400px">
                             <iframe
                                 class="rounded w-100 h-100"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31916.747644046616!2d30.619074217495793!3d-0.6083084991982625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19d91b0772433011%3A0xcb2179f846831c!2sMbarara%20University!5e0!3m2!1sen!2sug!4v1723891741738!5m2!1sen!2sug"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.739629875517!2d32.818472373715636!3d2.2509819580195707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1770bb92b7b8c36d%3A0xcc7e812a09d97f5a!2sLira%20University!5e0!3m2!1sen!2sug!4v1743718856774!5m2!1sen!2sug"
                                 frameborder="0"
                                 allowfullscreen=""
                                 aria-hidden="false"

@@ -25,15 +25,11 @@
     <link href="{{ asset('css/w3css.css') }}" rel="stylesheet">
     @vite(['resources/js/app.js'])
 </head>
-<body>    
-
+<body>
     <div id="app">
         <index 
-            PhoneNumber="{{ $settings->phone_number }}"
-            emailAddress="{{ $settings->email_address }}"
-            location="{{ $settings->location }}"
+            :settings="{{ $settings }}"
             :blogs="{{ $blogs }}"
-            imagePath="{{ asset('images') }}"
         />
     </div>
 </body>
