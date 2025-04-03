@@ -26,6 +26,7 @@
     @vite(['resources/js/app.js'])
 </head>
 <body>
+    {{ $settings}}
     <div id="app">
         <index 
             :settings="{{ $settings }}"
