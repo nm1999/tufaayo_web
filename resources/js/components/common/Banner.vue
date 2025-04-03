@@ -11,10 +11,6 @@
 export default {
     name:"Banner",
     props:{
-        bgImageUrl:{
-            type:String,
-            required:true
-        },
         bannerTitle:{
             type:String,
             required:true,
