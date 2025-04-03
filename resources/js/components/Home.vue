@@ -293,10 +293,6 @@ export default {
         sectionHeader,
     },
     props: {
-        title: {
-            type: String,
-            required: true,
-        },
         school_visited: {
             type: Number,
             required: true,
@@ -311,11 +307,8 @@ export default {
         },
         why_trust_us: {
             type: String,
-            required: true,
-        },
-        imagePath: {
-            type: String,
-            required: true,
+            required: false,
+            default: null
         },
     },
 };
