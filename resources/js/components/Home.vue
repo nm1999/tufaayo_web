@@ -331,5 +331,7 @@ export default {
 .visit-section .img-fluid:hover {
     transform: scale(2.5);
     z-index: 1;
+    border-radius: 20px;
+    border: 2px solid white;
 }
 </style>
