@@ -1,5 +1,4 @@
-@extends('app')
-@section('content')
+
 <div class="container">
     <br>
     <hr>
@@ -113,4 +112,3 @@
     </form>
 
 </div>
-@endsection('content')
