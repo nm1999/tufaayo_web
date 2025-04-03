@@ -62,21 +62,8 @@
         <!-- About End -->
 
         <!-- Service Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div
-                    class="text-center mx-auto mb-5 wow fadeInUp"
-                    data-wow-delay="0.1s"
-                    style="max-width: 600px"
-                >
-                    <p class="d-inline-block border rounded-pill py-1 px-4">
-                        Services
-                    </p>
-                    <h1>Our Community Services</h1>
-                </div>
-                <div class="row g-4"></div>
-            </div>
-        </div>
+        <sectionHeader section="services" title="Our Community Services" />
+
         <!-- Service End -->
 
         <!-- Feature Start -->
@@ -202,51 +189,50 @@
 
         <!-- latest activities -->
         <div class="container py-5">
-            <div
-                class="text-center mx-auto mb-5 wow fadeInUp"
-                data-wow-delay="0.1s"
-                style="max-width: 600px"
-            >
-                <p class="d-inline-block border rounded-pill py-1 px-4">
-                    Visits
-                </p>
-                <h1>Out reaches</h1>
-            </div>
+            <sectionHeader title="OutReaches" section="Visits" />
 
-            <div class="row">
+            <div class="row visit-section">
                 <div class="col-sm-12 col-md-4 col-lg-3">
-                    <BlogPost                        
-                        title="sample"
-                    >
-                    <template #image>
-                            <img src="../../../public/images/1.jpeg" class="img-fluid" alt="">
-                        </template>
-                </BlogPost>
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-3">
-                    <BlogPost                        
-                        title="sample"
-                    >
-                    <template #image>
-                            <img src="../../../public/images/7.jpeg" class="img-fluid" alt="">
-                        </template>
-                    </BlogPost>
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-3">
-                    <BlogPost                        
-                        title="sample"
-                    >
-                    <template #image>
-                            <img src="../../../public/images/5.jpeg" class="img-fluid" alt="">
-                        </template>
-                    </BlogPost>
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-3">
-                    <BlogPost 
-                       title="sample"
-                    >
+                    <BlogPost title="sample">
                         <template #image>
-                            <img src="../../../public/images/2.jpeg" class="img-fluid" alt="">
+                            <img
+                                src="../../../public/images/1.jpeg"
+                                class="img-fluid"
+                                alt=""
+                            />
+                        </template>
+                    </BlogPost>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3">
+                    <BlogPost title="sample">
+                        <template #image>
+                            <img
+                                src="../../../public/images/7.jpeg"
+                                class="img-fluid"
+                                alt=""
+                            />
+                        </template>
+                    </BlogPost>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3">
+                    <BlogPost title="sample">
+                        <template #image>
+                            <img
+                                src="../../../public/images/5.jpeg"
+                                class="img-fluid"
+                                alt=""
+                            />
+                        </template>
+                    </BlogPost>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3">
+                    <BlogPost title="sample">
+                        <template #image>
+                            <img
+                                src="../../../public/images/2.jpeg"
+                                class="img-fluid"
+                                alt=""
+                            />
                         </template>
                     </BlogPost>
                 </div>
@@ -264,7 +250,9 @@
                 <p class="d-inline-block border rounded-pill py-1 px-4">
                     Social Media
                 </p>
-                <h1 class="text-primary"> <span class="tufaayo-color">Tufaayo</span> Online Channels</h1>
+                <h1 class="text-primary">
+                    <span class="tufaayo-color">Tufaayo</span> Online Channels
+                </h1>
             </div>
 
             <div class="row">
@@ -272,14 +260,14 @@
                     <FollowUs />
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <iframe 
-                        width="500" 
-                        height="350" 
-                        src="https://www.youtube.com/embed/s8578OFo9p8" 
-                        title="Say NO to sugar daddies!💪Your worth isn’t defined by material things #NoToSugarDaddies #empowerment" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
+                    <iframe
+                        width="500"
+                        height="350"
+                        src="https://www.youtube.com/embed/s8578OFo9p8"
+                        title="Say NO to sugar daddies!💪Your worth isn’t defined by material things #NoToSugarDaddies #empowerment"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
                         allowfullscreen
                         style="border-radius: 20px"
                     ></iframe>
@@ -295,12 +283,14 @@
 import BlogPost from "./BlogPost.vue";
 import Banner from "./common/Banner.vue";
 import FollowUs from "./common/FollowUs.vue";
+import sectionHeader from "./common/sectionHeader.vue";
 export default {
     name: "Home",
     components: {
         BlogPost,
         Banner,
-        FollowUs
+        FollowUs,
+        sectionHeader,
     },
     props: {
         title: {
@@ -323,19 +313,23 @@ export default {
             type: String,
             required: true,
         },
-        imagePath:{
-            type:String,
-            required:true
-        }
+        imagePath: {
+            type: String,
+            required: true,
+        },
     },
 };
 </script>
 
 <style scoped>
 .banner {
-    background-image: url('../../../public/images/3.jpeg');
+    background-image: url("../../../public/images/3.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.visit-section .img-fluid:hover {
+    transform: scale(2.5);
+    z-index: 1;
+}
 </style>
