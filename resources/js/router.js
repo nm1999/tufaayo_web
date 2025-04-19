@@ -15,6 +15,10 @@ const routes = [
         component: () => import("./components/Contactus.vue"),
     },
     {
+        path: "/gallery",
+        component: () => import("./components/Gallery.vue"),
+    },
+    {
         path: "/blogs",
         component: () => import("./components/Blogs.vue"),
     },
