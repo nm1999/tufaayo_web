@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\Models\Setting;
 use App\Models\Blog;
 use App\Models\Service;
+use Illuminate\Support\Facades\File;
 
 class Controller
 {
@@ -120,6 +121,29 @@ class Controller
         ]);
 
         return redirect()->route('adminPanel')->with('message','Service added successfully');
+    }
+
+    public function getImages(){
+        $imagePaths = [];
+        $directory = public_path('gallery'); 
+
+        if (!File::exists($directory)) {
+            return response()->json(['error' => 'Folder not found.'], 404);
+        }
+
+        $files = File::allFiles($directory);
+
+        foreach ($files as $file) {
+            $path = $file->getPathname();
+
+            // Check if the file is an image
+            if (getimagesize($path) !== false) {
+                // Add the public path to the image
+                $imagePaths[] = asset('gallery' . '/' . $file->getFilename());
+            }
+        }
+
+        return response()->json(['images' => $imagePaths]);
     }
 
 

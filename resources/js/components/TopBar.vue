@@ -94,6 +94,9 @@
                     <router-link to="/contact-us" class="nav-item nav-link"
                         >Contact Us</router-link
                     >
+                    <router-link to="/gallery" class="nav-item nav-link"
+                        >Gallery</router-link
+                    >
                     <router-link to="/blogs" class="nav-item nav-link"
                         >Blogs</router-link
                     >
@@ -109,6 +112,9 @@
                     >
                     <router-link @click="isToggled = false" to="/contact-us" class="nav-item nav-link"
                         >Contact Us</router-link
+                    >
+                    <router-link @click="isToggled = false" to="/gallery" class="nav-item nav-link"
+                        >Gallery</router-link
                     >
                     <router-link @click="isToggled = false" to="/blogs" class="nav-item nav-link"
                         >Blogs</router-link

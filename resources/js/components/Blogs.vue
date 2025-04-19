@@ -18,7 +18,9 @@
             </BlogPost>            
           </div>
           <div v-else>
-              <p class="text-center">No blogs found</p>
+            <div class="w3-center">
+                <img src="../../../public/images/loading.gif" style="width:200px;height:200px;" alt="">
+            </div>
           </div>
     </div>
   </div>
