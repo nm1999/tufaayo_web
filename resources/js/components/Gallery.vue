@@ -11,12 +11,20 @@
                     class="col-sm-12 col-md-4 col-lg-4"
                 >
                     <div class="card-content" >
-                        <img :src="image" class="img-fluid" alt="">
+                        <img :src="image" class="img-fluid" @click="openImage(image)"alt="">
                     </div>
                 </div>
             </div>
             <div v-else class="w3-center">
                 <img src="../../../public/images/loading.gif" style="width:200px;height:200px;" alt="">
+            </div>
+        </div>
+        <div v-if="isModalOpen" class="modal fade" @click="closeModal">
+            <div class="modal-dialog">
+                <div class="modal-content" @click.stop>
+                    <span class="close-button" @click="closeModal">&times;</span>
+                    <img :src="selectedImage" alt="Full size image">
+                </div>
             </div>
         </div>
     </div>
@@ -29,7 +37,9 @@ export default {
     name:"Gallery",
     data() {
         return {
-            imagesData: []
+            imagesData: [],
+            isModalOpen: false,
+            selectedImage: null
         }
     },
     mounted(){
@@ -40,6 +50,13 @@ export default {
             await axios.get('/api/our/images').then((res)=>{
                 this.imagesData = res.data.images;
             });
+        },
+        openImage(img){
+            this.isModalOpen = true;
+            this.selectedImage = img
+        },
+        closeModal(){
+            this.isModalOpen= false;
         }
     }
 }
