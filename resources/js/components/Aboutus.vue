@@ -21,19 +21,36 @@
             </div>
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                 <p class="d-inline-block border rounded-pill py-1 px-4">About Us</p>
-                <h1 class="mb-4">Why You Should Trust Us? Get Know About Us!</h1>
-                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
-                <p><i class="far fa-check-circle text-primary me-3"></i>Quality health care</p>
-                <p><i class="far fa-check-circle text-primary me-3"></i>Only Qualified Doctors</p>
-                <p><i class="far fa-check-circle text-primary me-3"></i>Medical Research Professionals</p>
-                <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="">Read More</a>
+                <h1 class="mb-4">Who we are ?</h1>
+                <p>Tufaayo foundation is a youth led non-profit organization that focuses on empowering young people from under-privileged communities. Tufaayo Foundation works with a goal of empowering the young people to become their better selves and also guide the young people in taking crucial life decisions regarding careers, life skills, health and behavior change </p>
+                <p class="mb-4">We work tirelessly to make communities get transformed through</p>
+                <p><i class="far fa-check-circle text-primary me-3"></i>Team working</p>
+                <p><i class="far fa-check-circle text-primary me-3"></i>Inclusiveness</p>
+                <p><i class="far fa-check-circle text-primary me-3"></i>Transparency</p>
+                <p><i class="far fa-check-circle text-primary me-3"></i>Innovativeness</p>
+                <p><i class="far fa-check-circle text-primary me-3"></i>Appreciation</p>
+                <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="">Subscribe</a>
             </div>
         </div>
       </div>
     </div>
     <!-- About End -->
 
+    <div class="container-xxl py-5">
+        <div class="container">
+            <sectionHeader title="Our mission" section="mission" />
+            <div class="text-center">
+                <h5>Transforming young lives in Uganda with information and life skills to live a healthy and successful life.</h5>
+            </div>
+        </div>
+        
+        <div class="container">
+            <sectionHeader title="Our vision" section="vision" />
+            <div class="text-center">
+                <h5>Empowering communities, changing lives</h5>
+            </div>
+        </div>
+    </div>
       <!-- Team Start -->
       <div class="container-xxl py-5">
         <div class="container">
@@ -46,10 +63,10 @@
             <h1>Our Experienced Team</h1>
             </div>
             <div class="row g-4">
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="team-item position-relative rounded overflow-hidden">
                 <div class="overflow-hidden">
-                    <img class="img-fluid" style="max-height:300px;width:100%" src="../../../public/img/team1.jpeg" alt="" />
+                    <img class="img-fluid" style="max-height:400px;width:100%;" src="../../../public/img/team1.jpeg" alt="" />
                 </div>
                 <div class="team-text bg-light text-center p-4">
                     <h5>Nabazziwa Janat</h5>
@@ -62,10 +79,10 @@
                 </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="team-item position-relative rounded overflow-hidden">
                 <div class="overflow-hidden">
-                    <img class="img-fluid" style="height:300px;width:100%" src="../../../public/img/team2.jpeg" alt="" />
+                    <img class="img-fluid"  style="max-height:400px;width:100%;" src="../../../public/img/team2.jpeg" alt="" />
                 </div>
                 <div class="team-text bg-light text-center p-4">
                     <h5>Mugerwa Moses</h5>
@@ -78,10 +95,10 @@
                 </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="team-item position-relative rounded overflow-hidden">
                 <div class="overflow-hidden">
-                    <img class="img-fluid" style="max-height:300px;width:100%" src="../../../public/img/team3.jpeg" alt="" />
+                    <img class="img-fluid" style="max-height:400px;width:100%;"  src="../../../public/img/team3.jpeg" alt="" />
                 </div>
                 <div class="team-text bg-light text-center p-4">
                     <h5>Moreen</h5>
@@ -94,22 +111,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                <div class="team-item position-relative rounded overflow-hidden">
-                <div class="overflow-hidden">
-                    <img class="img-fluid" style="max-height:300px;width:100%" src="../../../public/img/team1.jpeg" alt="" />
-                </div>
-                <div class="team-text bg-light text-center p-4">
-                    <h5> Name</h5>
-                    <p class="text-primary">Department</p>
-                    <div class="team-social text-center">
-                    <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                </div>
-            </div>
+            
             </div>
         </div>
         </div>
@@ -120,10 +122,12 @@
 
 <script>
 import Banner from './common/Banner.vue';
+import sectionHeader from './common/sectionHeader.vue';
 export default {
     name:"Aboutus",
     components:{
-        Banner
+        Banner,
+        sectionHeader
     }
 }
 </script>
