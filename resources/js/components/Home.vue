@@ -5,7 +5,7 @@
             class="banner"
             bgImageUrl="/img/1.jpg"
             bannerTitle="Say No to Sugar Daddies !"
-            description="This is the banner sub title"
+            description="Created awareness among young girls the dangers of engaging in sexual relationships with older men "
         />
         <!-- Header End -->
 
@@ -33,27 +33,29 @@
                             About Us
                         </p>
                         <h1 class="mb-4">
-                            Why You Should Trust Us? Get Know About Us!
+                            Key Achievements!
                         </h1>
+                       
                         <p>
-                            {{ why_trust_us }}
+                            <i class="far fa-check-circle text-primary me-3"></i
+                            >Conducted career guidance sessions in 10 primary and secondary schools to support students in making informed educational and career choices.
                         </p>
                         <p>
                             <i class="far fa-check-circle text-primary me-3"></i
-                            >Quality health care
+                            >Created awareness among 1,617 young girls in 11 secondary schools about the dangers of engaging in sexual relationships with older men (“sugar daddies”) through drama and interactive plays.
                         </p>
                         <p>
                             <i class="far fa-check-circle text-primary me-3"></i
-                            >Only Qualified Doctors
+                            >Organized community outreaches and donations, including mama kits for 30 pregnant teenagers at Amach HCIV and reusable pads for 50 young girls at Amach Primary School.
                         </p>
                         <p>
                             <i class="far fa-check-circle text-primary me-3"></i
-                            >Medical Research Professionals
+                                >Trained 30 young girls in making reusable pads using locally available materials to promote menstrual hygiene and self-reliance.
                         </p>
                         <a
                             class="btn btn-primary rounded-pill py-3 px-5 mt-3"
                             href=""
-                            >Read More</a
+                            >Join Us</a
                         >
                     </div>
                 </div>
@@ -80,91 +82,24 @@
                             >
                                 Features
                             </p>
-                            <h1 class="text-white mb-4">Why Choose Us</h1>
-                            <p class="text-white mb-4 pb-2">
-                                {{ why_trust_us }}
-                            </p>
+                            <h1 class="text-white mb-4">Core Values</h1>
+                            
                             <div class="row g-4">
-                                <div class="col-6">
-                                    <div class="d-flex align-items-center">
-                                        <div
-                                            class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
-                                            style="width: 55px; height: 55px"
-                                        >
-                                            <i
-                                                class="fa fa-user-md text-primary"
-                                            ></i>
-                                        </div>
-                                        <div class="ms-4">
-                                            <p class="text-white mb-2">
-                                                Experience
-                                            </p>
-                                            <h5 class="text-white mb-0">
-                                                Doctors
-                                            </h5>
-                                        </div>
-                                    </div>
+                                <div class="col-md-6 col-sm-12 col-lg-6 text-white">
+                                    <i class="fa fa-check"></i> Team work
                                 </div>
-                                <div class="col-6">
-                                    <div class="d-flex align-items-center">
-                                        <div
-                                            class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
-                                            style="width: 55px; height: 55px"
-                                        >
-                                            <i
-                                                class="fa fa-check text-primary"
-                                            ></i>
-                                        </div>
-                                        <div class="ms-4">
-                                            <p class="text-white mb-2">
-                                                Quality
-                                            </p>
-                                            <h5 class="text-white mb-0">
-                                                Services
-                                            </h5>
-                                        </div>
-                                    </div>
+                                <div class="col-md-6 col-sm-12 col-lg-6 text-white">
+                                    <i class="fa fa-check"></i> Inclusivity
                                 </div>
-                                <div class="col-6">
-                                    <div class="d-flex align-items-center">
-                                        <div
-                                            class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
-                                            style="width: 55px; height: 55px"
-                                        >
-                                            <i
-                                                class="fa fa-comment-medical text-primary"
-                                            ></i>
-                                        </div>
-                                        <div class="ms-4">
-                                            <p class="text-white mb-2">
-                                                Positive
-                                            </p>
-                                            <h5 class="text-white mb-0">
-                                                Consultation
-                                            </h5>
-                                        </div>
-                                    </div>
+                                <div class="col-md-6 col-sm-12 col-lg-6 text-white">
+                                    <i class="fa fa-check"></i> Transparency
                                 </div>
-                                <div class="col-6">
-                                    <div class="d-flex align-items-center">
-                                        <div
-                                            class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
-                                            style="width: 55px; height: 55px"
-                                        >
-                                            <i
-                                                class="fa fa-headphones text-primary"
-                                            ></i>
-                                        </div>
-                                        <div class="ms-4">
-                                            <p class="text-white mb-2">
-                                                24 Hours
-                                            </p>
-                                            <h5 class="text-white mb-0">
-                                                Support
-                                            </h5>
-                                        </div>
-                                    </div>
+                                <div class="col-md-6 col-sm-12 col-lg-6 text-white">
+                                    <i class="fa fa-check"></i> Innovativeness
                                 </div>
+                                <div class="col-md-6 col-sm-12 col-lg-6 text-white">
+                                    <i class="fa fa-check"></i> Appreciation of diversity
+                                </div>                                                             
                             </div>
                         </div>
                     </div>
@@ -193,7 +128,7 @@
 
             <div class="row visit-section">
                 <div class="col-sm-12 col-md-4 col-lg-3">
-                    <BlogPost title="sample">
+                    <BlogPost title="A photo with student leaders at Amach Complex school">
                         <template #image>
                             <img
                                 src="../../../public/images/1.jpeg"
@@ -204,7 +139,7 @@
                     </BlogPost>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-3">
-                    <BlogPost title="sample">
+                    <BlogPost title="Conducting a play about the sugar daddies">
                         <template #image>
                             <img
                                 src="../../../public/images/7.jpeg"
@@ -215,7 +150,7 @@
                     </BlogPost>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-3">
-                    <BlogPost title="sample">
+                    <BlogPost title="Talking to students about career guidance">
                         <template #image>
                             <img
                                 src="../../../public/images/5.jpeg"
@@ -226,10 +161,10 @@
                     </BlogPost>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-3">
-                    <BlogPost title="sample">
+                    <BlogPost title="Giving mama kits to mothers">
                         <template #image>
                             <img
-                                src="../../../public/images/2.jpeg"
+                                src="../../../public/gallery/31.jpeg"
                                 class="img-fluid"
                                 alt=""
                             />
@@ -322,9 +257,9 @@ export default {
 }
 
 .visit-section .img-fluid:hover {
-    transform: scale(2.5);
-    z-index: 1;
+    /* transform: scale(2.5); */
+    /* z-index: 1; */
     border-radius: 20px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
 }
 </style>
