@@ -10,7 +10,8 @@
                     :key="index"
                     class="col-sm-12 col-md-4 col-lg-4 p-2"
                 >
-                    <div 
+                    <div
+                        @click.prevent="openImage(image)"
                         class="card-content"
                         :style="{
                             backgroundImage:'url('+image+')',
@@ -25,11 +26,15 @@
                 <img src="../../../public/images/loading.gif" style="width:200px;height:200px;" alt="">
             </div>
         </div>
-        <div v-if="isModalOpen" class="modal fade" @click="closeModal">
-            <div class="modal-dialog">
-                <div class="modal-content" @click.stop>
-                    <span class="close-button" @click="closeModal">&times;</span>
-                    <img :src="selectedImage" alt="Full size image">
+        <div v-if="selectedImage" class="fade">
+            <div class="">
+                <div class="">
+                    <span class="close-button">&times;</span>
+                    <div class="" :style="{
+                        backgroundImage:'url('+selectedImage+')',
+                        backgroundSize:'cover',
+                        }">
+                    </div>
                 </div>
             </div>
         </div>
@@ -58,6 +63,7 @@ export default {
             });
         },
         openImage(img){
+            console.log(img);
             this.isModalOpen = true;
             this.selectedImage = img
         },
