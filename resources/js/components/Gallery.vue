@@ -8,10 +8,16 @@
                 <div
                     v-for="(image,index) in imagesData"
                     :key="index"
-                    class="col-sm-12 col-md-4 col-lg-4"
+                    class="col-sm-12 col-md-4 col-lg-4 p-2"
                 >
-                    <div class="card-content" >
-                        <img :src="image" class="img-fluid" @click="openImage(image)"alt="">
+                    <div 
+                        class="card-content"
+                        :style="{
+                            backgroundImage:'url('+image+')',
+                            backgroundSize:'cover',
+                            backgroundRepeat:'no-repeat'
+                        }"
+                    >
                     </div>
                 </div>
             </div>
@@ -61,3 +67,11 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+
+.card-content{
+    width:100%;
+    height:400px;
+}
+</style>
