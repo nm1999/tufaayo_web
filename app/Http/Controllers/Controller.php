@@ -14,12 +14,8 @@ class Controller
     // }
 
     public function vueIndex(){
-        $blogs = Blog::orderBy('id','desc')->get();
-        foreach ($blogs as $blog) {
-            $blog->image = env('APP_URL').'blogs/'.$blog->blog_image;
-        }
         $settings = Setting::orderBy('id','desc')->first();
-        return view('vue',compact('blogs','settings'));
+        return view('vue',compact('settings'));
     }
 
     public function aboutus(){
@@ -144,6 +140,15 @@ class Controller
         }
 
         return response()->json(['images' => $imagePaths]);
+    }
+
+    public function getBlogs(){
+        $blogs = Blog::orderBy('id','desc')->get();
+        foreach ($blogs as $blog) {
+            $blog->image = env('APP_URL').'blogs/'.$blog->blog_image;
+        }
+
+        return response()->json(['blogs' => $blogs]);
     }
 
 

@@ -29,7 +29,6 @@
     <div id="app">
         <index 
             :settings="{{ $settings }}"
-            :blogs="{{ $blogs }}"
         />
     </div>
 </body>
