@@ -34,4 +34,7 @@ export default {
 .title{
     font-weight: 500;
 }
+.card-footer{
+    height: 100px;
+}
 </style>

@@ -13,7 +13,14 @@
               :date="blog.created_at"
             >
               <template #image>
-                  <img :src="blog.image" class="img-fluid" alt="">
+                <div
+                  class="fixed-image-size"
+                  :style="{
+                    backgroundImage:'url('+blog.image+')',
+                    backgroundSize:'cover',
+                  }"
+                >
+                </div>
               </template>
             </BlogPost>            
           </div>
@@ -28,20 +35,33 @@
 
 <script>
 import BlogPost from './BlogPost.vue';
+import axios from 'axios';
 export default {
     name:"Blogs",
     components:{
       BlogPost
     },
-    props:{
-        blogs: {
-            type: Array,
-            required: false,
-            default:[]
-        }
+    data() {
+      return {
+        blogs: []
+      }
     },
-    computed:{
-      
+    mounted() {
+      this.getBlogs();
+    },
+    methods:{
+      async getBlogs(){
+        await axios.get('/api/blogs').then((results)=>{
+          this.blogs =  results.data.blogs
+        })
+      }
     }
 }
 </script>
+
+<style scoped>
+.fixed-image-size{
+  width:100%;
+  height:250px;
+}
+</style>

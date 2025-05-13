@@ -4,7 +4,6 @@
         <div class="body">
            
             <router-view
-                :blogs="blogs"
                 :PhoneNumber="settings.phone_number"
                 :location="settings.location"
                 :emailAddress="settings.email_address"
@@ -34,17 +33,10 @@ export default {
         WebFooter,
     },
     props: {
-        blogs: {
-            type: Array,
-            required: true,
-        },
         settings:{
             type:Object,
             required:true
         }
     },
-    mounted(){
-        console.log(this.settings)
-    }
 };
 </script>
