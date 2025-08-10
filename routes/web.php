@@ -14,5 +14,6 @@ Route::post('/save/blog', [Controller::class,'saveBlog'])->name('save.blog');
 Route::post('/save/service', [Controller::class,'saveService'])->name('save.service');
 Route::get('/api/our/images',[Controller::class,'getImages']);
 Route::get('/api/blogs',[Controller::class,'getBlogs']);
+Route::get('/send/mail',[Controller::class,'sendSubscriptionMail'])->name('send.mail');
 
 Route::get('/{vue_capture?}', [Controller::class,'vueIndex'])->where('vue_capture', '[\/\w\.-]*');

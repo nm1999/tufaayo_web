@@ -9,13 +9,13 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/images/1.jpeg" class="d-block w-100" alt="...">
+                    <img src="./images/1.jpeg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="/images/2.jpeg" class="d-block w-100" alt="...">
+                    <img src="./images/2.jpeg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="/images/3.jpeg" class="d-block w-100" alt="...">
+                    <img src="./images/3.jpeg" class="d-block w-100" alt="...">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -237,6 +237,21 @@
                     ></iframe>
                 </div>
             </div>
+        </div>
+
+        <div class="container">
+            <form action="/send/mail" method="get">
+                <div class="formgroup">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-lg-6">
+                            <input type="text" class="form-control" name="email" placeholder="Enter a valid email address">
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-lg-6">
+                            <input type="submit" class="btn btn-success">
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
 
         <!-- end of tufaayo online audience -->

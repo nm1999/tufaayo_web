@@ -5,7 +5,9 @@ use Illuminate\Http\Request;
 use App\Models\Setting;
 use App\Models\Blog;
 use App\Models\Service;
+use App\Mail\SubscriberMail;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Mail;
 
 class Controller
 {
@@ -149,6 +151,14 @@ class Controller
         }
 
         return response()->json(['blogs' => $blogs]);
+    }
+
+    public function sendSubscriptionMail(){
+        Mail::to('john.doe@example.com')->send(new SubscriberMail());
+        return response()->json([
+            'error'=>false,
+            'message'=> 'Message sent'
+        ]);
     }
 
 
