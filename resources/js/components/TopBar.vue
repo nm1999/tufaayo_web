@@ -94,6 +94,9 @@
                     <router-link to="/contact-us" class="nav-item nav-link"
                         >Contact Us</router-link
                     >
+                    <router-link to="/team" class="nav-item nav-link"
+                        >Our Team</router-link
+                    >
                     <router-link to="/gallery" class="nav-item nav-link"
                         >Gallery</router-link
                     >
