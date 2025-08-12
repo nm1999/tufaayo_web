@@ -239,19 +239,136 @@
             </div>
         </div>
 
-        <div class="container">
-            <form action="/send/mail" method="get">
-                <div class="formgroup">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12 col-lg-6">
-                            <input type="text" class="form-control" name="email" placeholder="Enter a valid email address">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <sectionHeader title="Our mission" section="mission" />
+                <div class="text-center">
+                    <h5>
+                        Transforming young lives in Uganda with information and
+                        life skills to live a healthy and successful life.
+                    </h5>
+                </div>
+            </div>
+
+            <div class="container">
+                <sectionHeader title="Our vision" section="vision" />
+                <div class="text-center">
+                    <h5>Empowering communities, changing lives</h5>
+                </div>
+            </div>
+        </div>
+        <!-- Team Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div
+                    class="text-center mx-auto mb-5 wow fadeInUp"
+                    data-wow-delay="0.1s"
+                    style="max-width: 600px"
+                >
+                    <p class="d-inline-block border rounded-pill py-1 px-4">
+                        Team
+                    </p>
+                    <h1>Our Experienced Team</h1>
+                </div>
+                <div class="row g-4">
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div
+                            class="team-item position-relative rounded overflow-hidden"
+                        >
+                            <div class="overflow-hidden">
+                                <img
+                                    class="img-fluid"
+                                    style="max-height: 400px; width: 100%"
+                                    src="../../../public/img/team1.jpeg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Nabazziwa Janat</h5>
+                                <p class="text-primary">CEO</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href=""
+                                        ><i class="fab fa-facebook-f"></i
+                                    ></a>
+                                    <a class="btn btn-square" href=""
+                                        ><i class="fab fa-twitter"></i
+                                    ></a>
+                                    <a class="btn btn-square" href=""
+                                        ><i class="fab fa-instagram"></i
+                                    ></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6 col-sm-12 col-lg-6">
-                            <input type="submit" class="btn btn-success">
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <div
+                            class="team-item position-relative rounded overflow-hidden"
+                        >
+                            <div class="overflow-hidden">
+                                <img
+                                    class="img-fluid"
+                                    style="max-height: 400px; width: 100%"
+                                    src="../../../public/img/team2.jpeg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Mugerwa Moses</h5>
+                                <p class="text-primary">Communications</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href=""
+                                        ><i class="fab fa-facebook-f"></i
+                                    ></a>
+                                    <a class="btn btn-square" href=""
+                                        ><i class="fab fa-twitter"></i
+                                    ></a>
+                                    <a class="btn btn-square" href=""
+                                        ><i class="fab fa-instagram"></i
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div
+                            class="team-item position-relative rounded overflow-hidden"
+                        >
+                            <div class="overflow-hidden">
+                                <img
+                                    class="img-fluid"
+                                    style="max-height: 400px; width: 100%"
+                                    src="../../../public/img/team3.jpeg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Moreen</h5>
+                                <p class="text-primary">Director</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href=""
+                                        ><i class="fab fa-facebook-f"></i
+                                    ></a>
+                                    <a class="btn btn-square" href=""
+                                        ><i class="fab fa-twitter"></i
+                                    ></a>
+                                    <a class="btn btn-square" href=""
+                                        ><i class="fab fa-instagram"></i
+                                    ></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
 
         <!-- end of tufaayo online audience -->
