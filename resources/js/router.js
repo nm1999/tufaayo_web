@@ -22,6 +22,10 @@ const routes = [
         path: "/blogs",
         component: () => import("./components/Blogs.vue"),
     },
+    {
+        path: "/team",
+        component: () => import("./components/Team.vue"),
+    },
 ];
 
 export default createRouter({
