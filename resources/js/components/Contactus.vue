@@ -147,16 +147,54 @@
                     </div>
                 </div>
             </div>
+
+            <br>
+            <br>
+            <div class="container">
+                <div
+                    class="text-center mx-auto mb-5 wow fadeInUp"
+                    data-wow-delay="0.1s"
+                    style="max-width: 600px"
+                >
+                    <p class="d-inline-block border rounded-pill py-1 px-4">
+                        Social Media
+                    </p>
+                    <h1 class="text-primary">
+                        <span class="tufaayo-color">Tufaayo</span> Online Channels
+                    </h1>
+                </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <FollowUs />
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <iframe
+                        width="500"
+                        height="350"
+                        src="https://www.youtube.com/embed/s8578OFo9p8"
+                        title="Say NO to sugar daddies!💪Your worth isn’t defined by material things #NoToSugarDaddies #empowerment"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                        style="border-radius: 20px"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
 </template>
 
 <script>
 import Banner from "./common/Banner.vue";
+import FollowUs from "./common/FollowUs.vue";
 export default {
     name: "Contactus",
     components: {
         Banner,
+        FollowUs
     },
     props: {
         location: {
