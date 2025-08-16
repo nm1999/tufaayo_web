@@ -8,6 +8,18 @@
        
         <!-- Header End -->
 
+        <!-- how we started -->
+        <div class="container">
+            <sectionHeader section="started" title="How we started" />
+            <p>
+                Tufaayo Foundation was founded by a passionate young woman, Nabaziwa Jannat, in Lira—a region still recovering from the scars of the Kony War. During a visit to a local primary school, she was struck by the sight of empty desks where young girls should have been. Upon asking why, she learned a heartbreaking truth: many girls missed school during their menstrual periods due to a lack of access to sanitary pads. Over time, some dropped out entirely, while others were forced into early marriages.
+                Deeply moved by these stories, Jannat resolved to be part of the solution. Together with her colleagues, Muhindo Moureen and Mugerwa Moses, she founded Tufaayo Foundation with a mission to restore hope and dignity to vulnerable girls.
+                Today, the foundation trains schoolgirls to make reusable sanitary pads, implements the Sugar Daddy Awareness Program, offers career guidance to uplift youth, and promotes social and behavior change communication (SBCC). It also organizes outreach programs to donate clothes to children and provides mama kits to pregnant teenagers ensuring that no girl is left behind due to circumstances beyond her control.
+                Through these efforts, Tufaayo Foundation continues to create lasting change, empowering young people to stay in school, pursue their dreams, and live with dignity.
+            </p>
+        </div>
+        <!-- end how we started -->
+
         <!-- About Start -->
         <div class="container-xxl py-5">
             <div class="container">
@@ -70,17 +82,7 @@
         </div>
         <!-- About End -->
 
-        <!-- how we started -->
-        <div class="container">
-            <sectionHeader section="started" title="How we started" />
-            <p>
-                Tufaayo Foundation was founded by a passionate young woman, Nabaziwa Jannat, in Lira—a region still recovering from the scars of the Kony War. During a visit to a local primary school, she was struck by the sight of empty desks where young girls should have been. Upon asking why, she learned a heartbreaking truth: many girls missed school during their menstrual periods due to a lack of access to sanitary pads. Over time, some dropped out entirely, while others were forced into early marriages.
-                Deeply moved by these stories, Jannat resolved to be part of the solution. Together with her colleagues, Muhindo Moureen and Mugerwa Moses, she founded Tufaayo Foundation with a mission to restore hope and dignity to vulnerable girls.
-                Today, the foundation trains schoolgirls to make reusable sanitary pads, implements the Sugar Daddy Awareness Program, offers career guidance to uplift youth, and promotes social and behavior change communication (SBCC). It also organizes outreach programs to donate clothes to children and provides mama kits to pregnant teenagers ensuring that no girl is left behind due to circumstances beyond her control.
-                Through these efforts, Tufaayo Foundation continues to create lasting change, empowering young people to stay in school, pursue their dreams, and live with dignity.
-            </p>
-        </div>
-        <!-- end how we started -->
+        
 
 
         <!-- Service Start -->
