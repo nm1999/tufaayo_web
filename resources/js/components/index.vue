@@ -1,23 +1,23 @@
 <template>
     <div class="">
-        <TopBar :PhoneNumber="settings.phone_number" :location="settings.location"/>
+        <TopBar PhoneNumber="+256 758 115 817" location="Lira City"/>
         <div class="body">
            
             <router-view
-                :PhoneNumber="settings.phone_number"
-                :location="settings.location"
-                :emailAddress="settings.email_address"
-                :why_trust_us="settings.why_trust_us"
-                :number_of_members="settings.number_of_members"
-                :communities_visited="settings.communities_visited"
-                :school_visited="settings.school_visited"
+                PhoneNumber="+256 758 115 817"
+                location="Lira City"
+                emailAddress="tufaayofoundation@gmail.com"
+                :why_trust_us="''"
+                :number_of_members="323"
+                :communities_visited="323"
+                :school_visited="42"
             />
         </div>
         <div>
             <WebFooter
-                :location="settings.location"
-                :PhoneNumber="settings.phone_number"
-                :emailAddress="settings.email_address"
+                location="Lira City"
+                PhoneNumber="+256 758 115 817"
+                emailAddress="tufaayofoundation@gmail.com"
             />
         </div>
     </div>
