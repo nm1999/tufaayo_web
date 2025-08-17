@@ -6,7 +6,8 @@
           backgroundImage: 'url('+images[currentImageIndex]+')',
           backgroundSize:'cover',
           width:'100%',
-          height: '550px'
+          height: '550px',
+          paddingTop:'40px'
         }"
       >
         <h2 class="w3-animate-zoom img-description">Here goes the image description </h2>
