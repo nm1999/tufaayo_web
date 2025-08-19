@@ -10,8 +10,8 @@
 
         <!-- how we started -->
         <div class="container">
-            <sectionHeader section="started" title="How we started" />
-            <p>
+            <sectionHeader class="content-section fade-in-up" section="started" title="How we started" />
+            <p class="content-section fade-in-up">
                 Tufaayo Foundation was founded by a passionate young woman, Nabaziwa Jannat, in Lira—a region still recovering from the scars of the Kony War. During a visit to a local primary school, she was struck by the sight of empty desks where young girls should have been. Upon asking why, she learned a heartbreaking truth: many girls missed school during their menstrual periods due to a lack of access to sanitary pads. Over time, some dropped out entirely, while others were forced into early marriages.
                 Deeply moved by these stories, Jannat resolved to be part of the solution. Together with her colleagues, Muhindo Moureen and Mugerwa Moses, she founded Tufaayo Foundation with a mission to restore hope and dignity to vulnerable girls.
                 Today, the foundation trains schoolgirls to make reusable sanitary pads, implements the Sugar Daddy Awareness Program, offers career guidance to uplift youth, and promotes social and behavior change communication (SBCC). It also organizes outreach programs to donate clothes to children and provides mama kits to pregnant teenagers ensuring that no girl is left behind due to circumstances beyond her control.
@@ -22,7 +22,7 @@
 
         <!-- About Start -->
         <div class="container-xxl py-5">
-            <div class="container">
+            <div class="container content-section fade-in-up">
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                         <div class="d-flex flex-column">
@@ -86,14 +86,14 @@
 
 
         <!-- Service Start -->
-        <sectionHeader section="services" title="Our Community Services" />
+        <sectionHeader class="content-section fade-in-up" section="services" title="Our Community Services" />
 
         <!-- Service End -->
 
         <!-- Feature Start -->
         <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0">
             <div class="container feature px-lg-0">
-                <div class="row g-0 mx-lg-0">
+                <div class="row g-0 mx-lg-0 content-section fade-in-up">
                     <div
                         class="col-lg-6 feature-text py-5 wow fadeIn"
                         data-wow-delay="0.1s"
@@ -213,7 +213,7 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <sectionHeader title="Our mission" section="mission" />
-                <div class="text-center">
+                <div class="text-center content-section fade-in-up">
                     <h5>
                         Transforming young lives in Uganda with information and
                         life skills to live a healthy and successful life.
@@ -230,7 +230,7 @@
         </div>
         <!-- Team Start -->
         <div class="container-xxl py-5">
-            <div class="container">
+            <div class="container content-section fade-in-up">
                 <div
                     class="text-center mx-auto mb-5 wow fadeInUp"
                     data-wow-delay="0.1s"
