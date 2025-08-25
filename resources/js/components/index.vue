@@ -1,7 +1,7 @@
 <template>
     <div class="">
         <TopBar PhoneNumber="+256 758 115 817" location="Lira City"/>
-        <AnimatingElement />
+
         <div class="body">
            
             <router-view
