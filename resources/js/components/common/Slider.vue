@@ -1,11 +1,17 @@
 <template>
-  <div class="">
-      <img
-        :src="images[currentImageIndex]"
-        :alt="`Slider image ${currentImageIndex + 1}`"
-        class="w-full h-auto object-cover transition-opacity duration-500 ease-in-out rounded-2xl"
-        style="width:100%"
-      />
+  <div>
+      <div
+        class="w-full object-cover transition-opacity duration-500 ease-in-out rounded-2xl img-fluid"
+        :style="{
+          backgroundImage: 'url('+images[currentImageIndex]+')',
+          backgroundSize:'cover',
+          width:'100%',
+          height: '550px',
+          paddingTop:'40px'
+        }"
+      >
+        <h2 class="w3-animate-zoom img-description">Here goes the image description </h2>
+      </div>
   </div>
 </template>
 
@@ -15,13 +21,7 @@ import { ref, onMounted, onUnmounted } from 'vue';
 const props = defineProps({
   images: {
     type: Array,
-    required: false,
-    default: () => [
-      "https://placehold.co/1200x600/6366f1/ffffff?text=Image+1",
-      "https://placehold.co/1200x600/f87171/ffffff?text=Image+2",
-      "https://placehold.co/1200x600/4ade80/ffffff?text=Image+3",
-      "https://placehold.co/1200x600/a855f7/ffffff?text=Image+4",
-    ]
+    required: true,
   },
 });
 
@@ -41,3 +41,12 @@ onUnmounted(() => {
   clearInterval(timerId);
 });
 </script>
+
+<style scoped>
+.img-description{
+  font-size:40px;
+  font-weight: 600;
+  color: white;
+  padding-top:260px;
+}
+</style>
