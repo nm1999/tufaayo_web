@@ -155,6 +155,13 @@
         </div>
         <!-- Feature End -->
 
+        <div class="container">
+            <div class="">
+                <p>Schools visited</p>
+                <p id="number-list"></p>
+            </div>
+        </div>
+
         <!-- latest activities -->
         <div class="container py-5">
             <sectionHeader title="OutReaches" section="Visits" />
@@ -398,6 +405,23 @@ export default {
             default: null,
         },
     },
+    mounted(){
+        this.counter();
+    },
+    methods:{
+        counter(){
+            const numberElement = document.getElementById('number-list');
+            // Initialize a variable to track the number
+            let currentNumber = 0;
+           
+            setInterval(() => {
+                
+                    currentNumber++;
+                
+            }, 10);
+            
+        }
+    }
 };
 </script>
 
