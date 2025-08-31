@@ -8,11 +8,11 @@
                 <div
                     v-for="(image,index) in imagesData"
                     :key="index"
-                    class="col-sm-12 col-md-4 col-lg-4 p-2"
+                    class="col-sm-12 col-md-4 col-lg-4 p-2 animate-on-scroll"
                 >
                     <div
                         @click.prevent="openImage(image)"
-                        class="card-content animate-on-scroll"
+                        class="card-content"
                         :style="{
                             backgroundImage:'url('+image+')',
                             backgroundSize:'cover',
