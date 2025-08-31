@@ -8,7 +8,7 @@
                     data-wow-delay="0.1s"
                 >
                     <div
-                        class="team-item position-relative rounded overflow-hidden"
+                        class="team-item position-relative rounded overflow-hidden animate-on-scroll"
                     >
                         <div class="overflow-hidden" style="display:flex;justify-content: center;align-items: center;">
                             <img
@@ -40,7 +40,7 @@
                     data-wow-delay="0.1s"
                 >
                     <div
-                        class="team-item position-relative rounded overflow-hidden"
+                        class="team-item position-relative rounded overflow-hidden animate-on-scroll"
                     >
                         <div class="overflow-hidden" style="display:flex;justify-content: center;align-items: center;">
                             <img
@@ -72,7 +72,7 @@
                     data-wow-delay="0.1s"
                 >
                     <div
-                        class="team-item position-relative rounded overflow-hidden"
+                        class="team-item position-relative rounded overflow-hidden animate-on-scroll"
                     >
                         <div class="overflow-hidden" style="display:flex;justify-content: center;align-items: center;">
                             <img
@@ -104,7 +104,7 @@
                     data-wow-delay="0.1s"
                 >
                     <div
-                        class="team-item position-relative rounded overflow-hidden"
+                        class="team-item position-relative rounded overflow-hidden animate-on-scroll"
                     >
                         <div class="overflow-hidden" style="display:flex;justify-content: center;align-items: center;">
                             <img
@@ -136,7 +136,7 @@
                     data-wow-delay="0.1s"
                 >
                     <div
-                        class="team-item position-relative rounded overflow-hidden"
+                        class="team-item position-relative rounded overflow-hidden animate-on-scroll"
                     >
                         <div class="overflow-hidden" style="display:flex;justify-content: center;align-items: center;">
                             <img
@@ -168,7 +168,7 @@
                     data-wow-delay="0.1s"
                 >
                     <div
-                        class="team-item position-relative rounded overflow-hidden"
+                        class="team-item position-relative rounded overflow-hidden animate-on-scroll"
                     >
                         <div class="overflow-hidden" style="display:flex;justify-content: center;align-items: center;">
                             <img
@@ -683,5 +683,32 @@
 <script>
 export default {
     name:"Team",
+    mounted() {
+        this.setupIntersectionObserver();
+    },
+    methods: {
+          setupIntersectionObserver() {
+            const animatedElements =
+                document.querySelectorAll(".animate-on-scroll");
+
+            const observer = new IntersectionObserver(
+                (entries, observer) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("w3-animate-bottom");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                {
+                    threshold: 0.1,
+                }
+            );
+
+            animatedElements.forEach((element) => {
+                observer.observe(element);
+            });
+        },
+    },
 }
 </script>

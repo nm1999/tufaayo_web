@@ -12,7 +12,7 @@
                 >
                     <div
                         @click.prevent="openImage(image)"
-                        class="card-content"
+                        class="card-content animate-on-scroll"
                         :style="{
                             backgroundImage:'url('+image+')',
                             backgroundSize:'cover',
@@ -55,6 +55,7 @@ export default {
     },
     mounted(){
         this.myGalleryImages();
+        this.setupIntersectionObserver();
     },
     methods:{
         async myGalleryImages() {
@@ -69,7 +70,30 @@ export default {
         },
         closeModal(){
             this.isModalOpen= false;
-        }
+        },
+        setupIntersectionObserver() {
+            const animatedElements =
+                document.querySelectorAll(".animate-on-scroll");
+
+            const observer = new IntersectionObserver(
+                (entries, observer) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("w3-animate-bottom");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                {
+                    threshold: 0.1,
+                }
+            );
+
+            animatedElements.forEach((element) => {
+                observer.observe(element);
+            });
+        },
+        
     }
 }
 </script>

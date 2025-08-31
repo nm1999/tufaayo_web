@@ -12,7 +12,7 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="row g-5">
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="col-lg-6 wow animate-on-scroll" data-wow-delay="0.1s">
                         <div class="d-flex flex-column">
                             <img
                                 class="img-fluid rounded w-75 align-self-end"
@@ -27,7 +27,7 @@
                             />
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="col-lg-6 wow animate-on-scroll" data-wow-delay="0.5s">
                         <p class="d-inline-block border rounded-pill py-1 px-4">
                             About Us
                         </p>
@@ -87,6 +87,33 @@ export default {
     components: {
         Banner,
         sectionHeader,
+    },
+    mounted(){
+        this.setupIntersectionObserver();
+    },
+    methods: {
+        setupIntersectionObserver() {
+            const animatedElements =
+                document.querySelectorAll(".animate-on-scroll");
+
+            const observer = new IntersectionObserver(
+                (entries, observer) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("w3-animate-bottom");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                {
+                    threshold: 0.1,
+                }
+            );
+
+            animatedElements.forEach((element) => {
+                observer.observe(element);
+            });
+        },
     },
 };
 </script>
