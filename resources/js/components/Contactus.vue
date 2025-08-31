@@ -6,7 +6,7 @@
             description="This is the banner sub title"
         />
         <div class="container-xxl py-5">
-            <div class="container">
+            <div class="container animate-on-scroll">
                 <div class="row g-4">
                     <div class="col-lg-4">
                         <div
@@ -150,7 +150,7 @@
 
             <br>
             <br>
-            <div class="container">
+            <div class="container animate-on-scroll">
                 <div
                     class="text-center mx-auto mb-5 wow fadeInUp"
                     data-wow-delay="0.1s"
@@ -210,6 +210,33 @@ export default {
             required: true,
         },
     },
+    mounted() {
+        this.setupIntersectionObserver();
+    },
+    methods:{
+        setupIntersectionObserver() {
+            const animatedElements =
+                document.querySelectorAll(".animate-on-scroll");
+
+            const observer = new IntersectionObserver(
+                (entries, observer) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("w3-animate-bottom");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                {
+                    threshold: 0.1,
+                }
+            );
+
+            animatedElements.forEach((element) => {
+                observer.observe(element);
+            });
+        },
+    }
 };
 </script>
 
