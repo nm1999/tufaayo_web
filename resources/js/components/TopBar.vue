@@ -85,41 +85,86 @@
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <router-link to="/" class="nav-item nav-link active"
+                    <router-link 
+                        to="/" 
+                        class="nav-item nav-link"
+                        :class="{ 'active': $route.path === '/' }"
                         >Home</router-link
                     >
-                    <router-link to="/about-us" class="nav-item nav-link"
-                        >About Us</router-link
-                    >
-                    <router-link to="/contact-us" class="nav-item nav-link"
+                    <router-link 
+                        to="/about-us" 
+                        class="nav-item nav-link"
+                        :class="{ 'active': $route.path === '/about-us' }"
+                        >About Us
+                        </router-link>
+                    <router-link 
+                        to="/contact-us" 
+                        class="nav-item nav-link"
+                        :class="{ 'active': $route.path === '/contact-us' }"
                         >Contact Us</router-link
                     >
-                    <router-link to="/team" class="nav-item nav-link"
+                    <router-link 
+                        to="/team" 
+                        class="nav-item nav-link"
+                        :class="{ 'active': $route.path === '/team' }"
                         >Our Team</router-link
                     >
-                    <router-link to="/gallery" class="nav-item nav-link"
+                    <router-link 
+                        to="/gallery" 
+                        class="nav-item nav-link"
+                        :class="{ 'active': $route.path === '/gallery' }"
                         >Gallery</router-link
                     >
-                    <router-link to="/blogs" class="nav-item nav-link"
+                    <router-link 
+                        to="/blogs" 
+                        class="nav-item nav-link"
+                        :class="{ 'active': $route.path === '/blogs' }"
                         >Blogs</router-link
                     >
                 </div>
             </div>
             <div v-if="isToggled">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <router-link @click="isToggled = false" to="/" class="nav-item nav-link active"
+                    <router-link
+                        @click="isToggled = false" 
+                        to="/" 
+                        class="nav-item nav-link"
+                        :class="{ 'active': $route.path === '/' }"
                         >Home</router-link
                     >
-                    <router-link @click="isToggled = false" to="/about-us" class="nav-item nav-link"
+                    <router-link 
+                        @click="isToggled = false" 
+                        to="/about-us" 
+                        class="nav-item nav-link"
+                        :class="{ 'active': $route.path === '/about-us' }"
                         >About Us</router-link
                     >
-                    <router-link @click="isToggled = false" to="/contact-us" class="nav-item nav-link"
+                    <router-link 
+                        @click="isToggled = false" 
+                        to="/contact-us" 
+                        class="nav-item nav-link"
+                        :class="{ 'active': $route.path === '/contact-us' }"
                         >Contact Us</router-link
                     >
-                    <router-link @click="isToggled = false" to="/gallery" class="nav-item nav-link"
+                    <router-link 
+                        @click="isToggled = false" 
+                        to="/team" 
+                        class="nav-item nav-link"
+                        :class="{ 'active': $route.path === '/team' }"
+                        >Our Team</router-link
+                    >
+                    <router-link
+                        @click="isToggled = false"
+                        to="/gallery" 
+                        class="nav-item nav-link"
+                        :class="{ 'active': $route.path === '/gallery' }"
                         >Gallery</router-link
                     >
-                    <router-link @click="isToggled = false" to="/blogs" class="nav-item nav-link"
+                    <router-link 
+                        @click="isToggled = false"
+                        to="/blogs" 
+                        class="nav-item nav-link"
+                        :class="{ 'active': $route.path === '/blogs' }"
                         >Blogs</router-link
                     >
                 </div>
