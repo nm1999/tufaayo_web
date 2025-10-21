@@ -176,13 +176,6 @@
         </div>
         <!-- Feature End -->
 
-        <div class="container">
-            <div class="animate-on-scroll">
-                <p>Schools visited</p>
-                <p id="number-list"></p>
-            </div>
-        </div>
-
         <!-- latest activities -->
         <div class="container py-5 animate-on-scroll">
             <sectionHeader title="OutReaches" section="Visits" />
