@@ -2,7 +2,7 @@
     <div class="topbar">
         <!-- Topbar Start -->
         <div
-            class="container-fluid bg-primary text-white p-0 wow fadeIn"
+            class="container-fluid w3-blue text-white p-0 wow fadeIn"
             data-wow-delay="0.1s"
         >
             <div class="row gx-0 d-none d-lg-flex">
