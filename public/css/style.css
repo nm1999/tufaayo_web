@@ -527,3 +527,433 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
+
+/* ============================================
+   CHARITY YOUTH ORG - ANIMATIONS & ENHANCEMENTS
+   ============================================ */
+
+/* --- Keyframe Animations --- */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-40px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(40px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50%       { transform: scale(1.05); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50%       { transform: translateY(-12px); }
+}
+
+@keyframes shimmer {
+    0%   { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+
+@keyframes slideInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+    0%   { transform: scale(0.3); opacity: 0; }
+    50%  { transform: scale(1.05); opacity: 1; }
+    70%  { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    14%      { transform: scale(1.15); }
+    28%      { transform: scale(1); }
+    42%      { transform: scale(1.15); }
+    70%      { transform: scale(1); }
+}
+
+@keyframes gradientShift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes countUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Scroll-triggered animation utilities --- */
+.anim-fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.anim-fade-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.anim-fade-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.anim-zoom-in {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.anim-visible {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+/* --- Impact counters section --- */
+.impact-section {
+    background: linear-gradient(135deg, var(--primary) 0%, #1B2C51 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 8s ease infinite;
+    position: relative;
+    overflow: hidden;
+}
+.impact-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 60%);
+    animation: float 6s ease-in-out infinite;
+}
+.impact-card {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+.impact-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.2);
+}
+.impact-number {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1;
+    animation: countUp 0.6s ease;
+}
+.impact-label {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.impact-icon {
+    font-size: 2.2rem;
+    color: #fd27dd;
+    margin-bottom: 0.75rem;
+    animation: heartbeat 2s ease-in-out infinite;
+    display: block;
+}
+
+/* --- Program / Service cards --- */
+.program-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border: 1px solid #eef0f5;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    height: 100%;
+}
+.program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(4, 99, 250, 0.12);
+}
+.program-card .icon-wrap {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), #fd27dd);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    animation: float 3s ease-in-out infinite;
+}
+.program-card .icon-wrap i {
+    font-size: 1.6rem;
+    color: #fff;
+}
+.program-card h5 {
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 0.75rem;
+}
+.program-card p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* --- Donate / CTA section --- */
+.donate-section {
+    background: linear-gradient(135deg, #fd27dd 0%, var(--primary) 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 6s ease infinite;
+    border-radius: 20px;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+.donate-section::after {
+    content: '♥';
+    position: absolute;
+    font-size: 20rem;
+    color: rgba(255, 255, 255, 0.05);
+    right: -3rem;
+    top: -3rem;
+    line-height: 1;
+}
+.donate-btn {
+    background: #fff;
+    color: var(--primary);
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 0.85rem 2.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: pulse 2s ease-in-out infinite;
+}
+.donate-btn:hover {
+    transform: scale(1.06);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    color: var(--primary);
+}
+
+/* --- Hero Slider enhancements --- */
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+.hero-slider .slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.8s ease;
+    opacity: 0;
+}
+.hero-slider .slide.active {
+    opacity: 1;
+}
+.hero-slider .slide-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(4, 99, 250, 0.75) 0%, rgba(27, 44, 81, 0.5) 60%, transparent 100%);
+}
+.hero-slider .slide-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 5%;
+    max-width: 700px;
+}
+.hero-slider .slide-tag {
+    display: inline-block;
+    background: #fd27dd;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0.4rem 1.2rem;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    animation: slideInDown 0.9s ease;
+}
+.hero-slider .slide-title {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    animation: fadeInLeft 1s ease 0.2s both;
+}
+.hero-slider .slide-subtitle {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.88);
+    margin-bottom: 1.5rem;
+    animation: fadeInLeft 1s ease 0.4s both;
+}
+.hero-slider .slide-btn {
+    display: inline-flex;
+    gap: 1rem;
+    animation: fadeInUp 1s ease 0.6s both;
+}
+.hero-slider .slide-nav {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+    z-index: 10;
+}
+.hero-slider .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.4);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+.hero-slider .dot.active {
+    background: #fff;
+    transform: scale(1.4);
+}
+.hero-slider .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(255,255,255,0.2);
+    border: 2px solid rgba(255,255,255,0.5);
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s;
+    backdrop-filter: blur(4px);
+}
+.hero-slider .arrow:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+.hero-slider .arrow-left  { left: 1.5rem; }
+.hero-slider .arrow-right { right: 1.5rem; }
+
+/* --- Section header enhancement --- */
+.section-header-line {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(to right, var(--primary), #fd27dd);
+    border-radius: 2px;
+    margin: 0.6rem auto 1rem;
+}
+
+/* --- Blog / outreach card enhancements --- */
+.outreach-card {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    background: #fff;
+}
+.outreach-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(4, 99, 250, 0.14);
+}
+.outreach-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.outreach-card:hover img {
+    transform: scale(1.08);
+}
+.outreach-card .card-body {
+    padding: 1.2rem 1.4rem;
+}
+.outreach-card .card-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+/* --- Banner page header --- */
+.page-banner {
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+}
+.page-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(4,99,250,0.82) 0%, rgba(27,44,81,0.65) 100%);
+}
+.page-banner-content {
+    position: relative;
+    z-index: 2;
+    padding: 4rem 0 3rem;
+}
+.page-banner-content h1 {
+    font-weight: 900;
+    font-size: clamp(2rem, 4vw, 3rem);
+    animation: fadeInUp 0.8s ease;
+}
+.page-banner-content p {
+    animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+/* --- Volunteer CTA strip --- */
+.volunteer-strip {
+    background: var(--light);
+    border-left: 5px solid #fd27dd;
+    border-radius: 0 16px 16px 0;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: box-shadow 0.3s;
+}
+.volunteer-strip:hover {
+    box-shadow: 0 8px 30px rgba(4, 99, 250, 0.1);
+}
+
+/* --- Responsive mobile tweaks --- */
+@media (max-width: 767px) {
+    .hero-slider { height: 480px; }
+    .hero-slider .slide-title { font-size: 1.6rem; }
+    .impact-number { font-size: 2.2rem; }
+    .donate-section { padding: 2.5rem 1.2rem; }
+    .donate-section::after { font-size: 12rem; }
+}

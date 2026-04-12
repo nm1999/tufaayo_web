@@ -3,7 +3,7 @@
         <Banner
             class="banner"
             bannerTitle="Contact Us"
-            description="This is the banner sub title"
+            description="Reach out to partner, volunteer, or support our programs."
         />
         <div class="container-xxl py-5">
             <div class="container animate-on-scroll">

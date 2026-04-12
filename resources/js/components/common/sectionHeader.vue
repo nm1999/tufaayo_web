@@ -2,14 +2,14 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div
-                class="text-center mx-auto mb-5 wow fadeInUp"
-                data-wow-delay="0.1s"
-                style="max-width: 600px"
+                class="text-center mx-auto mb-5 anim-fade-up animate-on-scroll"
+                style="max-width: 640px"
             >
-                <p class="d-inline-block border rounded-pill py-1 px-4">
+                <span class="section-tag d-inline-block rounded-pill py-1 px-4 mb-2">
                     {{ section }}
-                </p>
-                <h1>{{ title }}</h1>
+                </span>
+                <h1 class="section-title">{{ title }}</h1>
+                <div class="section-header-line mx-auto"></div>
             </div>
             <div class="row g-4"></div>
         </div>
@@ -31,3 +31,20 @@ export default {
     }
 };
 </script>
+
+<style scoped>
+.section-tag {
+    background: var(--light);
+    color: var(--primary);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border: 1.5px solid rgba(4, 99, 250, 0.2);
+}
+.section-title {
+    font-weight: 800;
+    color: #1B2C51;
+    margin-bottom: 0.4rem;
+}
+</style>

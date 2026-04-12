@@ -4,7 +4,7 @@
         <Banner
             class="banner"
             bannerTitle="More about tufaayo foundation"
-            description="This is the banner sub title"
+            description="Youth-led. Community-driven. Changing lives in Lira, Uganda."
         />
         <!-- Page Header End -->
 
