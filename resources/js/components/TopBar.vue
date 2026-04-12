@@ -1,172 +1,64 @@
 <template>
-    <div class="topbar">
-        <!-- Topbar Start -->
-        <div
-            class="container-fluid w3-blue text-white p-0 wow fadeIn"
-            data-wow-delay="0.1s"
-        >
-            <div class="row gx-0 d-none d-lg-flex">
-                <div class="col-lg-7 col-sm-6 px-5 text-start">
-                    <div
-                        class="h-100 d-inline-flex align-items-center py-3 me-4"
-                    >
-                        <small
-                            class="fa fa-map-marker-alt text-primary me-2"
-                        ></small>
-                        <small> {{ location }}</small>
-                    </div>
-                    <div class="h-100 d-inline-flex align-items-center py-3">
-                        <small class="far fa-clock text-primary me-2"></small>
-                        <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
-                    </div>
+    <div class="topbar-shell">
+        <div class="impact-strip d-none d-lg-block">
+            <div class="container d-flex justify-content-between align-items-center py-2">
+                <div class="d-flex gap-4 text-white small">
+                    <span><i class="fa fa-map-marker-alt me-2"></i>{{ location }}</span>
+                    <span><i class="far fa-clock me-2"></i>Mon - Fri: 09:00 AM - 06:00 PM</span>
                 </div>
-                <div class="col-lg-5 px-5 col-sm-6 text-end">
-                    <div
-                        class="h-100 d-inline-flex align-items-center py-3 me-4"
-                    >
-                        <small
-                            class="fa fa-phone-alt text-primary me-2"
-                        ></small>
-                        <small>{{ PhoneNumber }}</small>
-                    </div>
-                    <div class="h-100 d-inline-flex align-items-center">
-                        <a
-                            class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
-                            href=""
-                            ><i class="fab fa-facebook-f"></i
-                        ></a>
-                        <a
-                            class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
-                            href=""
-                            ><i class="fab fa-twitter"></i
-                        ></a>
-                        <a
-                            class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
-                            href=""
-                            ><i class="fab fa-linkedin-in"></i
-                        ></a>
-                        <a
-                            class="btn btn-sm-square rounded-circle bg-white text-primary me-0"
-                            href=""
-                            ><i class="fab fa-instagram"></i
-                        ></a>
+                <div class="d-flex align-items-center gap-3">
+                    <span class="text-white small"><i class="fa fa-phone-alt me-2"></i>{{ PhoneNumber }}</span>
+                    <div class="d-flex gap-2">
+                        <a class="social-dot" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-dot" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="social-dot" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-dot" href=""><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Topbar End -->
 
-        <!-- Navbar Start -->
-        <nav
-            class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn"
-            data-wow-delay="0.1s"
-        >
-        <a class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top shadow-sm main-nav">
+            <div class="container px-3 px-lg-4">
+                <router-link to="/" class="navbar-brand d-flex align-items-center gap-2 m-0">
+                    <img :src="'images/tufaayologo.png'" alt="Tufaayo logo" class="logo" />
+                    <h1 class="m-0 text-primary our-name">
+                        <span class="brand-pink">Tufaayo</span> Foundation
+                    </h1>
+                </router-link>
+
                 <button
-                    @click="toggleMenu()"
+                    @click="toggleMenu"
                     type="button"
-                    class="navbar-toggler m-2"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse"
+                    class="navbar-toggler border-0"
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <h1 class="m-0 text-primary our-name" style="font-weight: bold">
-                    <i class="">
-                        <img
-                            :src="'images/tufaayologo.png'"
-                            style="width: 80px; height: 80px"
-                            alt=""
-                            class="logo"
-                        /> </i
-                    ><span style="color: #fd27dd">Tufaayo</span> Foundation
-                </h1>
-            </a>
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <router-link 
-                        to="/" 
-                        class="nav-item nav-link"
-                        :class="{ 'active': $route.path === '/' }"
-                        >Home</router-link
-                    >
-                    <router-link 
-                        to="/about-us" 
-                        class="nav-item nav-link"
-                        :class="{ 'active': $route.path === '/about-us' }"
-                        >About Us
-                        </router-link>
-                    <router-link 
-                        to="/contact-us" 
-                        class="nav-item nav-link"
-                        :class="{ 'active': $route.path === '/contact-us' }"
-                        >Contact Us</router-link
-                    >
-                    <router-link 
-                        to="/team" 
-                        class="nav-item nav-link"
-                        :class="{ 'active': $route.path === '/team' }"
-                        >Our Team</router-link
-                    >
-                    <router-link 
-                        to="/gallery" 
-                        class="nav-item nav-link"
-                        :class="{ 'active': $route.path === '/gallery' }"
-                        >Gallery</router-link
-                    >
-                    <router-link 
-                        to="/blogs" 
-                        class="nav-item nav-link"
-                        :class="{ 'active': $route.path === '/blogs' }"
-                        >Blogs</router-link
-                    >
+                <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                        <router-link to="/" class="nav-item nav-link" :class="{ active: $route.path === '/' }">Home</router-link>
+                        <router-link to="/about-us" class="nav-item nav-link" :class="{ active: $route.path === '/about-us' }">About Us</router-link>
+                        <router-link to="/contact-us" class="nav-item nav-link" :class="{ active: $route.path === '/contact-us' }">Contact Us</router-link>
+                        <router-link to="/team" class="nav-item nav-link" :class="{ active: $route.path === '/team' }">Our Team</router-link>
+                        <router-link to="/gallery" class="nav-item nav-link" :class="{ active: $route.path === '/gallery' }">Gallery</router-link>
+                        <router-link to="/blogs" class="nav-item nav-link" :class="{ active: $route.path === '/blogs' }">Blogs</router-link>
+                        <router-link to="/contact-us" class="btn btn-primary rounded-pill px-4 ms-lg-2 nav-cta">Donate</router-link>
+                    </div>
                 </div>
             </div>
-            <div v-if="isToggled">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <router-link
-                        @click="isToggled = false" 
-                        to="/" 
-                        class="nav-item nav-link"
-                        :class="{ 'active': $route.path === '/' }"
-                        >Home</router-link
-                    >
-                    <router-link 
-                        @click="isToggled = false" 
-                        to="/about-us" 
-                        class="nav-item nav-link"
-                        :class="{ 'active': $route.path === '/about-us' }"
-                        >About Us</router-link
-                    >
-                    <router-link 
-                        @click="isToggled = false" 
-                        to="/contact-us" 
-                        class="nav-item nav-link"
-                        :class="{ 'active': $route.path === '/contact-us' }"
-                        >Contact Us</router-link
-                    >
-                    <router-link 
-                        @click="isToggled = false" 
-                        to="/team" 
-                        class="nav-item nav-link"
-                        :class="{ 'active': $route.path === '/team' }"
-                        >Our Team</router-link
-                    >
-                    <router-link
-                        @click="isToggled = false"
-                        to="/gallery" 
-                        class="nav-item nav-link"
-                        :class="{ 'active': $route.path === '/gallery' }"
-                        >Gallery</router-link
-                    >
-                    <router-link 
-                        @click="isToggled = false"
-                        to="/blogs" 
-                        class="nav-item nav-link"
-                        :class="{ 'active': $route.path === '/blogs' }"
-                        >Blogs</router-link
-                    >
+
+            <div v-if="isToggled" class="mobile-menu d-lg-none">
+                <div class="container py-3">
+                    <div class="navbar-nav">
+                        <router-link @click="isToggled = false" to="/" class="nav-item nav-link" :class="{ active: $route.path === '/' }">Home</router-link>
+                        <router-link @click="isToggled = false" to="/about-us" class="nav-item nav-link" :class="{ active: $route.path === '/about-us' }">About Us</router-link>
+                        <router-link @click="isToggled = false" to="/contact-us" class="nav-item nav-link" :class="{ active: $route.path === '/contact-us' }">Contact Us</router-link>
+                        <router-link @click="isToggled = false" to="/team" class="nav-item nav-link" :class="{ active: $route.path === '/team' }">Our Team</router-link>
+                        <router-link @click="isToggled = false" to="/gallery" class="nav-item nav-link" :class="{ active: $route.path === '/gallery' }">Gallery</router-link>
+                        <router-link @click="isToggled = false" to="/blogs" class="nav-item nav-link" :class="{ active: $route.path === '/blogs' }">Blogs</router-link>
+                        <router-link @click="isToggled = false" to="/contact-us" class="btn btn-primary rounded-pill mt-2">Donate</router-link>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -205,24 +97,88 @@ export default {
 </script>
 
 <style scoped>
-.topbar {
+.topbar-shell {
     position: fixed;
     width: 100%;
-    border-bottom: 1px solid rgb(218, 213, 213);
-    z-index: 10000;
+    z-index: 9999;
 }
 
-.navbar-toggler{
-    font-size:14px;
+.impact-strip {
+    background: linear-gradient(90deg, #1b2c51 0%, #0463fa 100%);
+}
+
+.main-nav {
+    border-bottom: 1px solid #edf0f7;
+}
+
+.logo {
+    width: 62px;
+    height: 62px;
+    object-fit: contain;
+}
+
+.our-name {
+    font-size: 1.45rem;
+    font-weight: 800;
+}
+
+.brand-pink {
+    color: #fd27dd;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #1b2c51;
+    padding: 0.65rem 0.9rem;
+    border-radius: 999px;
+    transition: all .25s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary);
+    background: var(--light);
+}
+
+.nav-cta {
+    color: #fff !important;
+    font-weight: 700;
+}
+
+.social-dot {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.18);
+    color: #fff;
+    transition: transform .2s ease, background .2s ease;
+}
+
+.social-dot:hover {
+    transform: translateY(-2px);
+    background: #fd27dd;
+    color: #fff;
+}
+
+.mobile-menu {
+    background: #fff;
+    border-top: 1px solid #edf0f7;
+    width: 100%;
+}
+
+.navbar-toggler {
+    font-size: 14px;
 }
 
 @media (max-width: 768px) {
     .logo {
         display: none;
     }
-    .our-name{
-        font-size:24px;
-        margin-left:4px;
+    .our-name {
+        font-size: 22px;
     }
 }
 </style>
