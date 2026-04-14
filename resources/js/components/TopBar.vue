@@ -143,6 +143,18 @@ export default {
 .nav-cta {
     color: #fff !important;
     font-weight: 700;
+    background: linear-gradient(135deg, #0463fa, #fd27dd);
+    border: none;
+    letter-spacing: 0.3px;
+    box-shadow: 0 4px 14px rgba(4, 99, 250, 0.35);
+    transition: all 0.3s ease;
+}
+
+.nav-cta:hover {
+    color: #fff !important;
+    background: linear-gradient(135deg, #0255e0, #e020c9);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 22px rgba(4, 99, 250, 0.45);
 }
 
 .social-dot {

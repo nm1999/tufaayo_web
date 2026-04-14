@@ -426,4 +426,40 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.donate-section {
+    background: linear-gradient(135deg, #1b2c51 0%, #0463fa 60%, #fd27dd 100%);
+    border-radius: 1.75rem;
+    padding: 4rem 2rem;
+    box-shadow: 0 20px 60px rgba(27, 44, 81, 0.2);
+}
+
+.donate-btn {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 0.8rem 2.2rem;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.donate-btn:hover {
+    background: #fff;
+    color: #0463fa;
+    border-color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.donate-btn:active {
+    transform: translateY(-1px);
+}
 </style>
