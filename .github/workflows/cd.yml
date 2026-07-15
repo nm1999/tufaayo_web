@@ -1,0 +1,74 @@
+name: CD
+
+on:
+  push:
+    branches: [main]
+
+# Only run one deployment at a time; cancel any in-flight run on new pushes
+concurrency:
+  group: production-deploy
+  cancel-in-progress: false
+
+jobs:
+  # CI must pass before deploying
+  test:
+    name: Run Tests (pre-deploy gate)
+    uses: ./.github/workflows/ci.yml
+
+  deploy:
+    name: Deploy to Production
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # -------------------------------------------------------
+      # Install PHP & Node dependencies and build assets locally
+      # before uploading via FTP
+      # -------------------------------------------------------
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+          extensions: mbstring, pdo, pdo_mysql, xml, bcmath, curl, gd
+          coverage: none
+
+    
+      - name: Install Composer dependencies (production)
+        run: composer install --no-interaction --no-dev --prefer-dist --optimize-autoloader
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Node Dependencies
+        run: npm install
+
+      - name: Build Vite Assets
+        run: npm run build
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: cotiafrica.com/
+          
+          exclude: |
+            **/.git*
+            **/.github/**
+            **/node_modules/**
+            **/tests/**
+            **/.env
+            **/vendor/**
+            **/database/database.sqlite
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "::error::Deployment failed. Check the logs above."
+          # Optional: add a Slack / email notification here
