@@ -56,7 +56,7 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: cotiafrica.com/
+          server-dir: tufaayofoundation.org/
           
           exclude: |
             **/.git*
