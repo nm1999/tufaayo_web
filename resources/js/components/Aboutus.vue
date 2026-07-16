@@ -1,7 +1,7 @@
 <template>
     <div>
         <Banner
-            class="banner"
+            class="banner pt-5"
             bannerTitle="About Tufaayo Foundation"
             description="Youth-led. Community-driven. Changing lives in Lira, Uganda."
         />
