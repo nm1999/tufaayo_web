@@ -43,7 +43,7 @@
                         <router-link to="/team" class="nav-item nav-link" :class="{ active: $route.path === '/team' }">Our Team</router-link>
                         <router-link to="/gallery" class="nav-item nav-link" :class="{ active: $route.path === '/gallery' }">Gallery</router-link>
                         <router-link to="/blogs" class="nav-item nav-link" :class="{ active: $route.path === '/blogs' }">Blogs</router-link>
-                        <router-link to="/contact-us" class="btn btn-primary rounded-pill px-4 ms-lg-2 nav-cta">Donate</router-link>
+                        <router-link to="/contact-us" class="nav-cta">Donate</router-link>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                         <router-link @click="isToggled = false" to="/team" class="nav-item nav-link" :class="{ active: $route.path === '/team' }">Our Team</router-link>
                         <router-link @click="isToggled = false" to="/gallery" class="nav-item nav-link" :class="{ active: $route.path === '/gallery' }">Gallery</router-link>
                         <router-link @click="isToggled = false" to="/blogs" class="nav-item nav-link" :class="{ active: $route.path === '/blogs' }">Blogs</router-link>
-                        <router-link @click="isToggled = false" to="/contact-us" class="btn btn-primary rounded-pill mt-2">Donate</router-link>
+                        <router-link @click="isToggled = false" to="/contact-us" class="nav-item nav-link">Donate</router-link>
                     </div>
                 </div>
             </div>
@@ -138,6 +138,9 @@ export default {
 .nav-link.active {
     color: var(--primary);
     background: var(--light);
+    border-radius:1px;
+    padding-left:5px;
+    padding-right:5px;
 }
 
 .nav-cta {
@@ -148,6 +151,9 @@ export default {
     letter-spacing: 0.3px;
     box-shadow: 0 4px 14px rgba(4, 99, 250, 0.35);
     transition: all 0.3s ease;
+    padding:6px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .nav-cta:hover {

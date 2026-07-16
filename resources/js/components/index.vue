@@ -1,10 +1,10 @@
 <template>
     <div class="">
-        <TopBar PhoneNumber="+256 758 115 817" location="Lira City"/>
+        <TopBar PhoneNumber="+256 776 723 245" location="Lira City"/>
 
         <div class="body">
             <router-view
-                PhoneNumber="+256 758 115 817"
+                PhoneNumber="+256 776 723 245"
                 location="Lira City"
                 emailAddress="tufaayofoundation@gmail.com"
                 :why_trust_us="''"
@@ -16,7 +16,7 @@
         <div>
             <WebFooter
                 location="Lira City"
-                PhoneNumber="+256 758 115 817"
+                PhoneNumber="+256 776 723 245"
                 emailAddress="tufaayofoundation@gmail.com"
             />
         </div>
