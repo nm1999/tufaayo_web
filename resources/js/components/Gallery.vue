@@ -1,7 +1,7 @@
 <template>
     <div>
         <Banner
-            class="banner"
+            class="banner pt-5"
             bannerTitle="Our Gallery"
             description="Moments of hope, impact, and transformation across our communities."
         />

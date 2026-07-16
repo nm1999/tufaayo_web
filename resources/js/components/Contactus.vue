@@ -1,7 +1,7 @@
 <template>
     <div>
         <Banner
-            class="banner"
+            class="banner pt-5"
             bannerTitle="Contact Us"
             description="Reach out to partner, volunteer, or support our programs."
         />

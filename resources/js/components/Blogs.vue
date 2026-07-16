@@ -1,7 +1,7 @@
 <template>
   <div>
     <Banner
-      class="banner"
+      class="banner pt-5"
       bannerTitle="Stories & Updates"
       description="Latest insights, milestones, and voices from our community programs."
     />

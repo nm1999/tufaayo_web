@@ -1,7 +1,7 @@
 <template>
     <div>
         <Banner
-            class="banner"
+            class="banner pt-5"
             bannerTitle="Our Team"
             description="Meet the youth leaders and mentors driving impact at Tufaayo Foundation."
         />
