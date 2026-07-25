@@ -17,7 +17,6 @@
                         :key="index"
                         class="col-sm-6 col-lg-4 animate-on-scroll"
                     >
-                        <p>hello</p>
                         <div
                             @click.prevent="openImage(image)"
                             class="gallery-tile"
