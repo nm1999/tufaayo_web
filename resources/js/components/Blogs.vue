@@ -32,7 +32,8 @@
         </div>
 
         <div v-else class="w3-center py-5">
-          <img src="../../../public/images/loading.gif" style="width:200px;height:200px;" alt="Loading" />
+          <img v-if="isLoading" src="../../../public/images/loading.gif" style="width:200px;height:200px;" alt="Loading" />
+          <p v-else style="font-weight: bold;font-size: 16px;">No Blogs found !</p>
         </div>
       </div>
     </div>
@@ -55,6 +56,7 @@ export default {
   data() {
     return {
       blogs: [],
+      isLoading: true
     };
   },
   mounted() {
@@ -65,6 +67,7 @@ export default {
     async getBlogs() {
       await axios.get("/api/blogs").then((results) => {
         this.blogs = results.data.blogs;
+        this.isLoading = false;
       });
     },
     setupIntersectionObserver() {
