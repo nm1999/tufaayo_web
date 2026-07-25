@@ -9,13 +9,15 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <sectionHeader section="In Pictures" title="Stories from the Field" />
-
+                
                 <div v-if="imagesData.length > 0" class="row g-4">
+                    
                     <div
                         v-for="(image, index) in imagesData"
                         :key="index"
-                        class="col-sm-6 col-lg-4 anim-zoom-in animate-on-scroll"
+                        class="col-sm-6 col-lg-4 animate-on-scroll"
                     >
+                        <p>hello</p>
                         <div
                             @click.prevent="openImage(image)"
                             class="gallery-tile"
